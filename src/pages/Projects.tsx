@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -13,12 +12,10 @@ const Projects = () => {
       title: 'Glasbena šola Vili Marinšek',
       category: 'Branding',
       description: 'Za Glasbeno šolo Vili Marinšek je bila izvedena celostna prenova vizualne identitete, s ciljem osvežitve podobe in boljše komunikacije s ciljnimi skupinami. Projekt združuje klasično glasbeno estetiko s sodobnim, dostopnim oblikovanjem, primernim za mlade učence in starše.',
-      image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop',
+      image: '/lovable-uploads/7627c78b-2a3b-4e3f-8877-d423e70877fa.png',
       images: [
-        'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=900&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=900&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=900&h=600&fit=crop'
+        '/lovable-uploads/7627c78b-2a3b-4e3f-8877-d423e70877fa.png',
+        '/lovable-uploads/4a3bf0ab-3136-4279-bbc6-c557a99b9976.png'
       ],
       technologies: ['Celostna grafična podoba', 'Oblikovanje logotipa', 'Spletna stran', 'Oblikovanje tiskovin', 'Vizualno svetovanje'],
       details: 'Za Glasbeno šolo Vili Marinšek je bila izvedena celostna prenova vizualne identitete, s ciljem osvežitve podobe in boljše komunikacije s ciljnimi skupinami. Projekt združuje klasično glasbeno estetiko s sodobnim, dostopnim oblikovanjem, primernim za mlade učence in starše. S prenovo je šola pridobila prepoznavno in profesionalno vizualno prisotnost tako v tisku kot na spletu.'
