@@ -2,33 +2,43 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-import { Users, Target, Rocket, Camera, Palette, Video, Bot, TrendingUp } from 'lucide-react';
+import { Users, Target, Rocket, Camera, Palette, Video, Bot, TrendingUp, Home, User, FolderOpen, Settings, Mail } from 'lucide-react';
+
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
     setIsVisible(true);
   }, []);
-  const features = [{
-    title: 'O nas',
-    description: 'Spoznajte našo filozofijo in dosežke',
-    path: '/about',
-    gradient: 'from-white/10 to-purple-500/20'
-  }, {
-    title: 'Projekti',
-    description: 'Odkrijte naša najnovejša dela',
-    path: '/projects',
-    gradient: 'from-purple-500/20 to-white/10'
-  }, {
-    title: 'Storitve',
-    description: 'Celovite digitalne rešitve',
-    path: '/services',
-    gradient: 'from-white/10 to-purple-500/20'
-  }, {
-    title: 'Kontakt',
-    description: 'Povežimo se in ustvarimo skupaj',
-    path: '/contact',
-    gradient: 'from-purple-500/20 to-white/10'
-  }];
+  const features = [
+    {
+      title: 'O nas',
+      description: 'Spoznajte našo filozofijo in dosežke',
+      path: '/about',
+      gradient: 'from-white/10 to-purple-500/20',
+      icon: User
+    },
+    {
+      title: 'Projekti',
+      description: 'Odkrijte naša najnovejša dela',
+      path: '/projects',
+      gradient: 'from-purple-500/20 to-white/10',
+      icon: FolderOpen
+    },
+    {
+      title: 'Storitve',
+      description: 'Celovite digitalne rešitve',
+      path: '/services',
+      gradient: 'from-white/10 to-purple-500/20',
+      icon: Settings
+    },
+    {
+      title: 'Kontakt',
+      description: 'Povežimo se in ustvarimo skupaj',
+      path: '/contact',
+      gradient: 'from-purple-500/20 to-white/10',
+      icon: Mail
+    }
+  ];
   const services = [{
     icon: Target,
     title: 'Spletne strani',
@@ -117,17 +127,24 @@ const Index = () => {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {features.map((feature, index) => <Link key={feature.path} to={feature.path} className="group glass rounded-2xl p-6 hover:glow-purple transition-all duration-500 hover:scale-105" style={{
-            animationDelay: `${index * 0.2}s`
-          }}>
-                <div className=""></div>
+            {features.map((feature, index) => (
+              <Link
+                key={feature.path}
+                to={feature.path}
+                className="group glass rounded-2xl p-6 hover:glow-purple transition-all duration-500 hover:scale-105"
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
+                <div className="mb-4">
+                  <feature.icon className="w-8 h-8 galactic-purple group-hover:text-white transition-colors" />
+                </div>
                 <h3 className="text-xl font-bold mb-2 galactic-purple group-hover:text-white transition-colors">
                   {feature.title}
                 </h3>
                 <p className="text-white/70 group-hover:text-white/90 transition-colors">
                   {feature.description}
                 </p>
-              </Link>)}
+              </Link>
+            ))}
           </div>
         </div>
       </section>
