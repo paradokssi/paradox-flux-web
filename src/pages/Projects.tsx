@@ -8,93 +8,12 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Moderna spletna trgovina',
-      category: 'E-commerce',
-      description: 'Futuristična spletna trgovina z AI priporočili in naprednim UX dizajnom.',
-      image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=600&fit=crop',
-      technologies: ['React', 'AI', 'UX/UI'],
-      details: 'Kompleksna spletna trgovina z integrirano umetno inteligenco za personalizirane priporočila produktov.'
-    },
-    {
-      id: 2,
-      title: 'Korporativna identiteta',
+      title: 'Glasbena šola Vili Marinšek',
       category: 'Branding',
-      description: 'Celovita vizualna identiteta za tehnološko podjetje z modularnim dizajnom.',
-      image: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&h=600&fit=crop',
-      technologies: ['Branding', 'Print', 'Digital'],
-      details: 'Razvoj celotne vizualne identitete, od logotipa do poslovnih materialov in spletne prisotnosti.'
-    },
-    {
-      id: 3,
-      title: 'AI Dashboard',
-      category: 'Web aplikacija',
-      description: 'Interaktivna dashboard aplikacija za upravljanje AI sistemov v podjetju.',
-      image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=600&fit=crop',
-      technologies: ['React', 'AI', 'Dashboard'],
-      details: 'Napredna spletna aplikacija za real-time monitoring in upravljanje AI sistemov.'
-    },
-    {
-      id: 4,
-      title: 'Video produkcija',
-      category: 'Video',
-      description: 'Promocijski video za startup z animacijami in motion graphics.',
-      image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&h=600&fit=crop',
-      technologies: ['Video', 'Animation', 'Motion Graphics'],
-      details: 'Kreativni promocijski video z naprednimi vizualnimi efekti in animacijami.'
-    },
-    {
-      id: 5,
-      title: 'Fotografska serija',
-      category: 'Fotografija',
-      description: 'Arhitekturna fotografija z uporabo naprednih tehnik osvetlitve.',
-      image: 'https://images.unsplash.com/photo-1439337153520-7082a56a81f4?w=800&h=600&fit=crop',
-      technologies: ['Fotografija', 'Post-produkcija', 'Arhitektura'],
-      details: 'Profesionalna arhitekturna fotografija za prestižne nepremičninske projekte.'
-    },
-    {
-      id: 6,
-      title: 'AI Chatbot sistem',
-      category: 'AI rešitve',
-      description: 'Pametni chatbot za avtomatizacijo kupruške podpore.',
-      image: 'https://images.unsplash.com/photo-1493397212122-2b85dda8106b?w=800&h=600&fit=crop',
-      technologies: ['AI', 'NLP', 'Automation'],
-      details: 'Inteligentni chatbot sistem za avtomatizacijo komunikacije s strankami.'
-    },
-    {
-      id: 7,
-      title: 'CGP produkcija',
-      category: 'CGP',
-      description: 'Napredna računalniška grafična produkcija za filmsko industrijo.',
-      image: 'https://images.unsplash.com/photo-1551808525-51a94da548ce?w=800&h=600&fit=crop',
-      technologies: ['CGP', '3D Modeling', 'Visual Effects'],
-      details: 'Profesionalna računalniška grafična produkcija z najnovejšimi tehnologijami za filme in reklame.'
-    },
-    {
-      id: 8,
-      title: 'UI/UX mobilna aplikacija',
-      category: 'UI Design',
-      description: 'Sodobno uporabniško oblikovanje za mobilno banking aplikacijo.',
-      image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop',
-      technologies: ['UI Design', 'UX Research', 'Prototyping'],
-      details: 'Celovito uporabniško oblikovanje z uporabniškimi raziskavami in interaktivnimi prototipi.'
-    },
-    {
-      id: 9,
-      title: 'Tiskarski material',
-      category: 'Tiskovine',
-      description: 'Oblikovanje tiskovin za prestižno hotelsko verigo.',
-      image: 'https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=800&h=600&fit=crop',
-      technologies: ['Print Design', 'Typography', 'Color Management'],
-      details: 'Profesionalno oblikovanje tiskovin z natančnim upravljanjem barv in tipografije.'
-    },
-    {
-      id: 10,
-      title: 'Digitalno svetovanje',
-      category: 'Svetovanje',
-      description: 'Strateško svetovanje za digitalno preobrazbo podjetja.',
-      image: 'https://images.unsplash.com/photo-1553484771-371a605b060b?w=800&h=600&fit=crop',
-      technologies: ['Strategy', 'Digital Transformation', 'Analytics'],
-      details: 'Celovito strateško svetovanje za uspešno digitalno preobrazbo in optimizacijo procesov.'
+      description: 'Za Glasbeno šolo Vili Marinšek je bila izvedena celostna prenova vizualne identitete, s ciljem osvežitve podobe in boljše komunikacije s ciljnimi skupinami. Projekt združuje klasično glasbeno estetiko s sodobnim, dostopnim oblikovanjem, primernim za mlade učence in starše.',
+      image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop',
+      technologies: ['Celostna grafična podoba', 'Oblikovanje logotipa', 'Spletna stran', 'Oblikovanje tiskovin', 'Vizualno svetovanje'],
+      details: 'S prenovo je šola pridobila prepoznavno in profesionalno vizualno prisotnost tako v tisku kot na spletu. Projekt združuje klasično glasbeno estetiko s sodobnim, dostopnim oblikovanjem, primernim za mlade učence in starše.'
     }
   ];
 
@@ -216,7 +135,7 @@ const Projects = () => {
                     
                     <div className="space-y-4">
                       <h3 className="text-lg font-semibold electric-blue">
-                        Uporabljene tehnologije
+                        Uporabljene storitve
                       </h3>
                       <div className="flex flex-wrap gap-2">
                         {project.technologies.map((tech, techIndex) => (
