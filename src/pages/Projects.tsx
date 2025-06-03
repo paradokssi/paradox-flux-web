@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -60,6 +59,42 @@ const Projects = () => {
       image: 'https://images.unsplash.com/photo-1493397212122-2b85dda8106b?w=800&h=600&fit=crop',
       technologies: ['AI', 'NLP', 'Automation'],
       details: 'Inteligentni chatbot sistem za avtomatizacijo komunikacije s strankami.'
+    },
+    {
+      id: 7,
+      title: 'CGP produkcija',
+      category: 'CGP',
+      description: 'Napredna računalniška grafična produkcija za filmsko industrijo.',
+      image: 'https://images.unsplash.com/photo-1551808525-51a94da548ce?w=800&h=600&fit=crop',
+      technologies: ['CGP', '3D Modeling', 'Visual Effects'],
+      details: 'Profesionalna računalniška grafična produkcija z najnovejšimi tehnologijami za filme in reklame.'
+    },
+    {
+      id: 8,
+      title: 'UI/UX mobilna aplikacija',
+      category: 'UI Design',
+      description: 'Sodobno uporabniško oblikovanje za mobilno banking aplikacijo.',
+      image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop',
+      technologies: ['UI Design', 'UX Research', 'Prototyping'],
+      details: 'Celovito uporabniško oblikovanje z uporabniškimi raziskavami in interaktivnimi prototipi.'
+    },
+    {
+      id: 9,
+      title: 'Tiskarski material',
+      category: 'Tiskovine',
+      description: 'Oblikovanje tiskovin za prestižno hotelsko verigo.',
+      image: 'https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=800&h=600&fit=crop',
+      technologies: ['Print Design', 'Typography', 'Color Management'],
+      details: 'Profesionalno oblikovanje tiskovin z natančnim upravljanjem barv in tipografije.'
+    },
+    {
+      id: 10,
+      title: 'Digitalno svetovanje',
+      category: 'Svetovanje',
+      description: 'Strateško svetovanje za digitalno preobrazbo podjetja.',
+      image: 'https://images.unsplash.com/photo-1553484771-371a605b060b?w=800&h=600&fit=crop',
+      technologies: ['Strategy', 'Digital Transformation', 'Analytics'],
+      details: 'Celovito strateško svetovanje za uspešno digitalno preobrazbo in optimizacijo procesov.'
     }
   ];
 
