@@ -3,9 +3,11 @@ import { useState } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../components/ui/carousel';
+import { Button } from '../components/ui/button';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
+  const [selectedFilter, setSelectedFilter] = useState<string>('Vse');
 
   const projects = [
     {
@@ -36,6 +38,14 @@ const Projects = () => {
     }
   ];
 
+  // Get unique categories
+  const categories = ['Vse', ...Array.from(new Set(projects.map(project => project.category)))];
+
+  // Filter projects based on selected filter
+  const filteredProjects = selectedFilter === 'Vse' 
+    ? projects 
+    : projects.filter(project => project.category === selectedFilter);
+
   return (
     <div className="min-h-screen bg-black relative overflow-hidden">
       <Navigation />
@@ -56,11 +66,35 @@ const Projects = () => {
         </div>
       </section>
 
+      {/* Filter Section */}
+      <section className="relative py-8 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
+            {categories.map((category) => (
+              <Button
+                key={category}
+                variant={selectedFilter === category ? "default" : "outline"}
+                onClick={() => setSelectedFilter(category)}
+                className={`
+                  ${selectedFilter === category 
+                    ? 'bg-blue-600 hover:bg-blue-700 text-white' 
+                    : 'glass border-white/20 text-white hover:bg-white/10'
+                  }
+                  transition-all duration-300
+                `}
+              >
+                {category}
+              </Button>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Projects Grid */}
-      <section className="relative py-16 px-4">
+      <section className="relative py-8 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
+            {filteredProjects.map((project, index) => (
               <div
                 key={project.id}
                 className="group glass rounded-2xl overflow-hidden hover:glow-blue transition-all duration-500 hover:scale-105 cursor-pointer animate-scale-up"
@@ -117,7 +151,7 @@ const Projects = () => {
             onClick={(e) => e.stopPropagation()}
           >
             {(() => {
-              const project = projects.find(p => p.id === selectedProject);
+              const project = filteredProjects.find(p => p.id === selectedProject);
               if (!project) return null;
 
               return (
