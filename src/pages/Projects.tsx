@@ -1,6 +1,8 @@
+
 import { useState } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../components/ui/carousel';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
@@ -12,8 +14,14 @@ const Projects = () => {
       category: 'Branding',
       description: 'Za Glasbeno šolo Vili Marinšek je bila izvedena celostna prenova vizualne identitete, s ciljem osvežitve podobe in boljše komunikacije s ciljnimi skupinami. Projekt združuje klasično glasbeno estetiko s sodobnim, dostopnim oblikovanjem, primernim za mlade učence in starše.',
       image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop',
+      images: [
+        'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=600&fit=crop'
+      ],
       technologies: ['Celostna grafična podoba', 'Oblikovanje logotipa', 'Spletna stran', 'Oblikovanje tiskovin', 'Vizualno svetovanje'],
-      details: 'S prenovo je šola pridobila prepoznavno in profesionalno vizualno prisotnost tako v tisku kot na spletu. Projekt združuje klasično glasbeno estetiko s sodobnim, dostopnim oblikovanjem, primernim za mlade učence in starše.'
+      details: 'Za Glasbeno šolo Vili Marinšek je bila izvedena celostna prenova vizualne identitete, s ciljem osvežitve podobe in boljše komunikacije s ciljnimi skupinami. Projekt združuje klasično glasbeno estetiko s sodobnim, dostopnim oblikovanjem, primernim za mlade učence in starše. S prenovo je šola pridobila prepoznavno in profesionalno vizualno prisotnost tako v tisku kot na spletu.'
     }
   ];
 
@@ -94,7 +102,7 @@ const Projects = () => {
           onClick={() => setSelectedProject(null)}
         >
           <div
-            className="glass-blue rounded-2xl max-w-2xl w-full max-h-[80vh] overflow-y-auto animate-scale-up"
+            className="glass-blue rounded-2xl max-w-4xl w-full max-h-[80vh] overflow-y-auto animate-scale-up"
             onClick={(e) => e.stopPropagation()}
           >
             {(() => {
@@ -104,14 +112,24 @@ const Projects = () => {
               return (
                 <div>
                   <div className="relative">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-64 object-cover rounded-t-2xl"
-                    />
+                    <Carousel className="w-full">
+                      <CarouselContent>
+                        {project.images.map((image, index) => (
+                          <CarouselItem key={index}>
+                            <img
+                              src={image}
+                              alt={`${project.title} - slika ${index + 1}`}
+                              className="w-full h-80 object-cover rounded-t-2xl"
+                            />
+                          </CarouselItem>
+                        ))}
+                      </CarouselContent>
+                      <CarouselPrevious className="left-4" />
+                      <CarouselNext className="right-4" />
+                    </Carousel>
                     <button
                       onClick={() => setSelectedProject(null)}
-                      className="absolute top-4 right-4 glass rounded-full w-10 h-10 flex items-center justify-center hover:glow-blue transition-all"
+                      className="absolute top-4 right-4 glass rounded-full w-10 h-10 flex items-center justify-center hover:glow-blue transition-all z-10"
                     >
                       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
