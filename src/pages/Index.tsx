@@ -32,7 +32,7 @@ const Index = () => {
       icon: Settings
     },
     {
-      title: 'Kontakt',
+      title: 'Stopi v stik',
       description: 'Povežimo se in ustvarimo skupaj',
       path: '/contact',
       gradient: 'from-purple-500/20 to-white/10',
@@ -103,7 +103,7 @@ const Index = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center mt-12">
-            <Link to="/contact" className="glass-purple px-8 py-4 rounded-full text-white font-semibold glow-purple-hover transition-all duration-300 hover:scale-105">
+            <Link to="/contact" className="bg-galactic-purple px-8 py-4 rounded-full text-white font-semibold glow-purple-hover transition-all duration-300 hover:scale-105">
               Stopi v stik
             </Link>
             <Link to="/projects" className="glass border border-white/20 px-8 py-4 rounded-full text-white font-semibold hover:border-galactic-purple transition-all duration-300 hover:scale-105">
