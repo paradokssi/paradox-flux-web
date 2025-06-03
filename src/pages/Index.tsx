@@ -67,8 +67,7 @@ const Index = () => {
     category: 'Video produkcija',
     color: 'from-blue-600 to-indigo-600'
   }];
-  return <div className="min-h-screen bg-black relative overflow-hidden">
-      <Navigation />
+  return <div className="min-h-screen bg-black relative overflow-hidden">Paradoks<Navigation />
       
       {/* Background Elements */}
       <div className="fixed inset-0 bg-gradient-radial opacity-50"></div>
@@ -121,7 +120,7 @@ const Index = () => {
             {features.map((feature, index) => <Link key={feature.path} to={feature.path} className="group glass rounded-2xl p-6 hover:glow-purple transition-all duration-500 hover:scale-105" style={{
             animationDelay: `${index * 0.2}s`
           }}>
-                <div className={`h-32 bg-gradient-to-br ${feature.gradient} rounded-xl mb-4 group-hover:animate-pulse`}></div>
+                <div className=""></div>
                 <h3 className="text-xl font-bold mb-2 galactic-purple group-hover:text-white transition-colors">
                   {feature.title}
                 </h3>
