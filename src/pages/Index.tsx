@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
@@ -64,19 +65,23 @@ const Index = () => {
     title: 'Poslovno svetovanje',
     desc: 'Digitalna preobrazba'
   }];
-  const projects = [{
-    title: 'E-commerce platforma',
-    category: 'Spletna trgovina',
-    color: 'from-purple-600 to-blue-600'
-  }, {
-    title: 'Brand identiteta',
-    category: 'Grafično oblikovanje',
-    color: 'from-pink-600 to-purple-600'
-  }, {
-    title: 'Korporativni video',
-    category: 'Video produkcija',
-    color: 'from-blue-600 to-indigo-600'
-  }];
+  const projects = [
+    {
+      title: 'Glasbena šola Vili Marinšek',
+      category: 'Branding',
+      image: '/lovable-uploads/7627c78b-2a3b-4e3f-8877-d423e70877fa.png'
+    },
+    {
+      title: 'Nejc Velkavrh Produkcija',
+      category: 'Branding',
+      image: '/lovable-uploads/02f212e9-aecc-4bd4-8277-3f142561eccc.png'
+    },
+    {
+      title: 'Toper – Lifestyle fotografiranje',
+      category: 'Fotografija',
+      image: '/lovable-uploads/c4ce2d6e-50c2-4fab-a65e-487f54529cb6.png'
+    }
+  ];
   return <div className="min-h-screen bg-black relative overflow-hidden">
       <Navigation />
       
@@ -197,7 +202,12 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {projects.map((project, index) => <div key={project.title} className="glass rounded-xl overflow-hidden group hover:glow-purple transition-all duration-500 hover:scale-105">
-                <div className={`h-48 bg-gradient-to-br ${project.color} relative`}>
+                <div className="h-48 relative overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
                 </div>
                 <div className="p-6">
