@@ -35,6 +35,22 @@ const Projects = () => {
       ],
       technologies: ['Celostna grafična podoba (CGP)', 'Oblikovanje logotipa', 'Spletna stran', 'Oblikovanje tiskovin', 'Vizualno svetovanje'],
       details: 'Za Nejc Velkavrh Produkcija sem pripravil celostno grafično podobo, ki odraža profesionalnost in kreativnost v svetu videoprodukcije. Vizualna identiteta temelji na sodobnem, čistem dizajnu z močnim poudarkom na osebni blagovni znamki. Projekt vključuje tudi oblikovanje in razvoj spletne strani, ki jasno predstavi storitve, projekte in kontaktne možnosti.'
+    },
+    {
+      id: 3,
+      title: 'Toper – Lifestyle fotografiranje',
+      category: 'Fotografija',
+      description: 'Za blagovno znamko Toper smo v sodelovanju z agencijo Great Agency izvedli lifestyle fotografiranje ob jezeru Jasna. Fotografirali smo dva modela v kolekciji oblačil Toper, z namenom ustvariti naravne, avtentične vizuale za spletno stran in družbena omrežja.',
+      image: '/lovable-uploads/c4ce2d6e-50c2-4fab-a65e-487f54529cb6.png',
+      images: [
+        '/lovable-uploads/c4ce2d6e-50c2-4fab-a65e-487f54529cb6.png',
+        '/lovable-uploads/e173e791-08bd-48ac-a789-d5a09a606d78.png',
+        '/lovable-uploads/ca4c0184-e2c1-4826-a45a-d3e45cac69cf.png',
+        '/lovable-uploads/5a9de308-a5b6-4d58-b5c7-f090252c9e05.png',
+        '/lovable-uploads/3c988df9-3363-4a0b-8655-114b79dd86a1.png'
+      ],
+      technologies: ['Fotografiranje', 'Urejanje fotografij', 'Vsebina za spletno stran', 'Vsebina za družbena omrežja'],
+      details: 'Za blagovno znamko Toper smo v sodelovanju z agencijo Great Agency izvedli lifestyle fotografiranje ob jezeru Jasna. Fotografirali smo dva modela v kolekciji oblačil Toper, z namenom ustvariti naravne, avtentične vizuale za spletno stran in družbena omrežja. Ambient gorskega jezera je dopolnil sproščeno, a vizualno močno zgodbo znamke.'
     }
   ];
 
@@ -77,10 +93,10 @@ const Projects = () => {
                 onClick={() => setSelectedFilter(category)}
                 className={`
                   ${selectedFilter === category 
-                    ? 'bg-blue-600 hover:bg-blue-700 text-white' 
-                    : 'glass border-white/20 text-white hover:bg-white/10'
+                    ? 'bg-galactic-purple hover:bg-galactic-purple/90 text-white border-galactic-purple' 
+                    : 'glass border-white/20 text-white hover:bg-white/10 hover:border-galactic-purple/50'
                   }
-                  transition-all duration-300
+                  transition-all duration-300 rounded-full px-6 py-2 font-medium
                 `}
               >
                 {category}
@@ -97,7 +113,7 @@ const Projects = () => {
             {filteredProjects.map((project, index) => (
               <div
                 key={project.id}
-                className="group glass rounded-2xl overflow-hidden hover:glow-blue transition-all duration-500 hover:scale-105 cursor-pointer animate-scale-up"
+                className="group glass rounded-2xl overflow-hidden hover:glow-purple transition-all duration-500 hover:scale-105 cursor-pointer animate-scale-up"
                 style={{ animationDelay: `${index * 0.2}s` }}
                 onClick={() => setSelectedProject(project.id)}
               >
@@ -109,14 +125,14 @@ const Projects = () => {
                   />
                   <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-all duration-300"></div>
                   <div className="absolute top-4 right-4">
-                    <span className="glass-blue px-3 py-1 rounded-full text-sm font-medium">
+                    <span className="glass-purple px-3 py-1 rounded-full text-sm font-medium">
                       {project.category}
                     </span>
                   </div>
                 </div>
                 
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3 electric-blue group-hover:text-white transition-colors">
+                  <h3 className="text-xl font-bold mb-3 galactic-purple group-hover:text-white transition-colors">
                     {project.title}
                   </h3>
                   <p className="text-white/70 mb-4 group-hover:text-white/90 transition-colors">
@@ -147,7 +163,7 @@ const Projects = () => {
           onClick={() => setSelectedProject(null)}
         >
           <div
-            className="glass-blue rounded-2xl max-w-4xl w-full max-h-[80vh] overflow-y-auto animate-scale-up"
+            className="glass-purple rounded-2xl max-w-4xl w-full max-h-[80vh] overflow-y-auto animate-scale-up"
             onClick={(e) => e.stopPropagation()}
           >
             {(() => {
@@ -176,7 +192,7 @@ const Projects = () => {
                     </Carousel>
                     <button
                       onClick={() => setSelectedProject(null)}
-                      className="absolute top-4 right-4 glass rounded-full w-10 h-10 flex items-center justify-center hover:glow-blue transition-all z-10"
+                      className="absolute top-4 right-4 glass rounded-full w-10 h-10 flex items-center justify-center hover:glow-purple transition-all z-10"
                     >
                       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -186,7 +202,7 @@ const Projects = () => {
                   
                   <div className="p-8">
                     <div className="flex items-center justify-between mb-4">
-                      <h2 className="text-2xl font-bold electric-blue">
+                      <h2 className="text-2xl font-bold galactic-purple">
                         {project.title}
                       </h2>
                       <span className="glass px-3 py-1 rounded-full text-sm">
@@ -199,7 +215,7 @@ const Projects = () => {
                     </p>
                     
                     <div className="space-y-4">
-                      <h3 className="text-lg font-semibold electric-blue">
+                      <h3 className="text-lg font-semibold galactic-purple">
                         Uporabljene storitve
                       </h3>
                       <div className="flex flex-wrap gap-2">
