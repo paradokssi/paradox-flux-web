@@ -77,7 +77,8 @@ const Index = () => {
     category: 'Video produkcija',
     color: 'from-blue-600 to-indigo-600'
   }];
-  return <div className="min-h-screen bg-black relative overflow-hidden">Paradoks<Navigation />
+  return <div className="min-h-screen bg-black relative overflow-hidden">
+      <Navigation />
       
       {/* Background Elements */}
       <div className="fixed inset-0 bg-gradient-radial opacity-50"></div>
@@ -131,16 +132,19 @@ const Index = () => {
               <Link
                 key={feature.path}
                 to={feature.path}
-                className="group glass rounded-2xl p-6 hover:glow-purple transition-all duration-500 hover:scale-105"
+                className="group glass rounded-2xl p-8 hover:glow-purple transition-all duration-500 hover:scale-105 text-center"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <div className="mb-4">
-                  <feature.icon className="w-8 h-8 galactic-purple group-hover:text-white transition-colors" />
+                <div className="mb-6 flex justify-center">
+                  <div className="relative">
+                    <div className="absolute inset-0 bg-galactic-purple/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300"></div>
+                    <feature.icon className="relative w-16 h-16 galactic-purple group-hover:text-white transition-all duration-300 group-hover:scale-110" strokeWidth={1.5} />
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold mb-2 galactic-purple group-hover:text-white transition-colors">
+                <h3 className="text-xl font-bold mb-3 galactic-purple group-hover:text-white transition-colors">
                   {feature.title}
                 </h3>
-                <p className="text-white/70 group-hover:text-white/90 transition-colors">
+                <p className="text-white/70 group-hover:text-white/90 transition-colors text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </Link>
