@@ -10,7 +10,7 @@ const Navigation = () => {
     { name: 'O nas', path: '/about' },
     { name: 'Projekti', path: '/projects' },
     { name: 'Storitve', path: '/services' },
-    { name: 'Stopi v stik', path: '/contact' }
+    { name: 'Kontakt', path: '/contact' }
   ];
 
   return (
