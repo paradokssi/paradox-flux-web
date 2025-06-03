@@ -15,10 +15,10 @@ const Projects = () => {
       description: 'Za Glasbeno šolo Vili Marinšek je bila izvedena celostna prenova vizualne identitete, s ciljem osvežitve podobe in boljše komunikacije s ciljnimi skupinami. Projekt združuje klasično glasbeno estetiko s sodobnim, dostopnim oblikovanjem, primernim za mlade učence in starše.',
       image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop',
       images: [
-        'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop',
-        'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=600&fit=crop'
+        'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=900&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=900&h=600&fit=crop',
+        'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=900&h=600&fit=crop'
       ],
       technologies: ['Celostna grafična podoba', 'Oblikovanje logotipa', 'Spletna stran', 'Oblikovanje tiskovin', 'Vizualno svetovanje'],
       details: 'Za Glasbeno šolo Vili Marinšek je bila izvedena celostna prenova vizualne identitete, s ciljem osvežitve podobe in boljše komunikacije s ciljnimi skupinami. Projekt združuje klasično glasbeno estetiko s sodobnim, dostopnim oblikovanjem, primernim za mlade učence in starše. S prenovo je šola pridobila prepoznavno in profesionalno vizualno prisotnost tako v tisku kot na spletu.'
@@ -116,11 +116,13 @@ const Projects = () => {
                       <CarouselContent>
                         {project.images.map((image, index) => (
                           <CarouselItem key={index}>
-                            <img
-                              src={image}
-                              alt={`${project.title} - slika ${index + 1}`}
-                              className="w-full h-80 object-cover rounded-t-2xl"
-                            />
+                            <div className="w-full aspect-[3/2]">
+                              <img
+                                src={image}
+                                alt={`${project.title} - slika ${index + 1}`}
+                                className="w-full h-full object-cover rounded-t-2xl"
+                              />
+                            </div>
                           </CarouselItem>
                         ))}
                       </CarouselContent>
