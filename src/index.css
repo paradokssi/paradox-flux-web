@@ -44,8 +44,8 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    /* Custom Paradoks Colors */
-    --electric-blue: #00C2FF;
+    /* Custom Paradoks Colors - Galactic Blue-Purple */
+    --galactic-purple: #6C5CE7;
     --glass-bg: rgba(255, 255, 255, 0.1);
     --glass-border: rgba(255, 255, 255, 0.2);
   }
@@ -99,30 +99,30 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
   
-  .glass-blue {
-    background: rgba(0, 194, 255, 0.1);
+  .glass-purple {
+    background: rgba(108, 92, 231, 0.1);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(0, 194, 255, 0.3);
+    border: 1px solid rgba(108, 92, 231, 0.3);
   }
   
-  .glow-blue {
-    box-shadow: 0 0 20px rgba(0, 194, 255, 0.5);
+  .glow-purple {
+    box-shadow: 0 0 20px rgba(108, 92, 231, 0.5);
   }
   
-  .glow-blue-hover:hover {
-    box-shadow: 0 0 30px rgba(0, 194, 255, 0.8);
+  .glow-purple-hover:hover {
+    box-shadow: 0 0 30px rgba(108, 92, 231, 0.8);
   }
   
-  .electric-blue {
-    color: #00C2FF;
+  .galactic-purple {
+    color: #6C5CE7;
   }
   
-  .bg-electric-blue {
-    background-color: #00C2FF;
+  .bg-galactic-purple {
+    background-color: #6C5CE7;
   }
   
-  .border-electric-blue {
-    border-color: #00C2FF;
+  .border-galactic-purple {
+    border-color: #6C5CE7;
   }
   
   .animate-float {
@@ -146,18 +146,18 @@
   }
   
   .text-gradient {
-    background: linear-gradient(135deg, #ffffff 0%, #00C2FF 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #6C5CE7 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   
   .bg-gradient-radial {
-    background: radial-gradient(circle at 50% 50%, rgba(0, 194, 255, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle at 50% 50%, rgba(108, 92, 231, 0.1) 0%, transparent 70%);
   }
 
   .neon-line {
-    background: linear-gradient(90deg, transparent, #00C2FF, transparent);
+    background: linear-gradient(90deg, transparent, #6C5CE7, transparent);
     height: 1px;
     animation: neonLine 3s linear infinite;
   }
@@ -169,8 +169,8 @@
 }
 
 @keyframes glow {
-  from { box-shadow: 0 0 20px rgba(0, 194, 255, 0.5); }
-  to { box-shadow: 0 0 40px rgba(0, 194, 255, 0.8); }
+  from { box-shadow: 0 0 20px rgba(108, 92, 231, 0.5); }
+  to { box-shadow: 0 0 40px rgba(108, 92, 231, 0.8); }
 }
 
 @keyframes slideUp {
@@ -215,10 +215,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #00C2FF;
+  background: #6C5CE7;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0099CC;
+  background: #5B4DD1;
 }

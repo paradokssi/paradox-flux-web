@@ -28,9 +28,9 @@ const Navigation = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`px-3 py-2 text-sm font-medium transition-all duration-300 hover:text-electric-blue ${
+                className={`px-3 py-2 text-sm font-medium transition-all duration-300 hover:text-galactic-purple ${
                   location.pathname === item.path 
-                    ? 'text-electric-blue border-b border-electric-blue' 
+                    ? 'text-galactic-purple border-b border-galactic-purple' 
                     : 'text-white/80'
                 }`}
               >
@@ -43,7 +43,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-electric-blue transition-colors"
+              className="text-white hover:text-galactic-purple transition-colors"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isOpen ? (
@@ -65,9 +65,9 @@ const Navigation = () => {
                   key={item.path}
                   to={item.path}
                   onClick={() => setIsOpen(false)}
-                  className={`block px-3 py-2 text-base font-medium transition-all duration-300 hover:text-electric-blue ${
+                  className={`block px-3 py-2 text-base font-medium transition-all duration-300 hover:text-galactic-purple ${
                     location.pathname === item.path 
-                      ? 'text-electric-blue' 
+                      ? 'text-galactic-purple' 
                       : 'text-white/80'
                   }`}
                 >

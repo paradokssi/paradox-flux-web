@@ -19,22 +19,22 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold electric-blue">Kontakt</h4>
+            <h4 className="text-lg font-semibold galactic-purple">Kontakt</h4>
             <div className="space-y-2">
               <div className="flex items-center space-x-3">
-                <Mail className="w-4 h-4 electric-blue" />
-                <a href="mailto:nejc@paradoks.si" className="text-white/70 hover:electric-blue transition-colors">
+                <Mail className="w-4 h-4 galactic-purple" />
+                <a href="mailto:nejc@paradoks.si" className="text-white/70 hover:galactic-purple transition-colors">
                   nejc@paradoks.si
                 </a>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="w-4 h-4 electric-blue" />
-                <a href="tel:+38641550886" className="text-white/70 hover:electric-blue transition-colors">
+                <Phone className="w-4 h-4 galactic-purple" />
+                <a href="tel:+38641550886" className="text-white/70 hover:galactic-purple transition-colors">
                   +386 41 550 886
                 </a>
               </div>
               <div className="flex items-center space-x-3">
-                <MapPin className="w-4 h-4 electric-blue" />
+                <MapPin className="w-4 h-4 galactic-purple" />
                 <span className="text-white/70">Ljubljana, Slovenija</span>
               </div>
             </div>
@@ -42,7 +42,7 @@ const Footer = () => {
 
           {/* Services */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold electric-blue">Storitve</h4>
+            <h4 className="text-lg font-semibold galactic-purple">Storitve</h4>
             <div className="space-y-2 text-white/70">
               <div>Spletne strani</div>
               <div>Grafično oblikovanje</div>
