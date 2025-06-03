@@ -10,7 +10,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-gradient">Paradoks</h3>
+            <img 
+              src="/lovable-uploads/7d1e0164-f6a7-439a-8554-2ba04f454964.png" 
+              alt="Paradoks logo" 
+              className="h-12 w-auto"
+            />
             <p className="text-white/70">
               Digitalna agencija prihodnosti. Združujemo estetiko, tehnologijo in učinkovitost.
             </p>
