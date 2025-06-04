@@ -1,15 +1,19 @@
-
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
+import ThemeToggle from '../components/ThemeToggle';
+import { useTheme } from '../contexts/ThemeContext';
 import { Users, Target, Rocket, Camera, Palette, Video, Bot, TrendingUp, Home, User, FolderOpen, Settings, Mail } from 'lucide-react';
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const { isDark } = useTheme();
+
   useEffect(() => {
     setIsVisible(true);
   }, []);
+
   const features = [
     {
       title: 'O nas',
@@ -82,15 +86,17 @@ const Index = () => {
       image: '/lovable-uploads/c4ce2d6e-50c2-4fab-a65e-487f54529cb6.png'
     }
   ];
-  return <div className="min-h-screen bg-black relative overflow-hidden">
+  return (
+    <div className={`min-h-screen relative overflow-hidden transition-all duration-300 ${isDark ? 'theme-dark' : 'theme-light'}`}>
       <Navigation />
+      <ThemeToggle />
       
       {/* Background Elements */}
       <div className="fixed inset-0 bg-gradient-radial opacity-50"></div>
       <div className="fixed top-1/4 left-1/4 w-96 h-96 bg-galactic-purple/10 rounded-full blur-3xl animate-float"></div>
       <div className="fixed bottom-1/4 right-1/4 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-float" style={{
-      animationDelay: '2s'
-    }}></div>
+        animationDelay: '2s'
+      }}></div>
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-4">
@@ -98,12 +104,12 @@ const Index = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight">
             <span className="text-gradient"></span>
             <br />
-            <span className="text-white">Digitalna agencija</span>
+            <span className={isDark ? 'text-white' : 'text-black'}>Digitalna agencija</span>
             <br />
             <span className="galactic-purple">prihodnosti</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto">
+          <p className={`text-xl md:text-2xl max-w-3xl mx-auto ${isDark ? 'text-white/80' : 'text-black/80'}`}>
             Združujemo estetiko, tehnologijo in učinkovitost.
           </p>
           
@@ -111,7 +117,7 @@ const Index = () => {
             <Link to="/contact" className="bg-galactic-purple px-8 py-4 rounded-full text-white font-semibold glow-purple-hover transition-all duration-300 hover:scale-105">
               Stopi v stik
             </Link>
-            <Link to="/projects" className="glass border border-white/20 px-8 py-4 rounded-full text-white font-semibold hover:border-galactic-purple transition-all duration-300 hover:scale-105">
+            <Link to="/projects" className={`glass border px-8 py-4 rounded-full font-semibold hover:border-galactic-purple transition-all duration-300 hover:scale-105 ${isDark ? 'border-white/20 text-white' : 'border-black/20 text-black'}`}>
               Oglej si projekte
             </Link>
           </div>
@@ -119,7 +125,7 @@ const Index = () => {
         
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
+          <div className={`w-6 h-10 border-2 rounded-full flex justify-center ${isDark ? 'border-white/30' : 'border-black/30'}`}>
             <div className="w-1 h-3 bg-galactic-purple rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
@@ -143,13 +149,13 @@ const Index = () => {
                 <div className="mb-6 flex justify-center">
                   <div className="relative">
                     <div className="absolute inset-0 bg-galactic-purple/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300"></div>
-                    <feature.icon className="relative w-16 h-16 galactic-purple group-hover:text-white transition-all duration-300 group-hover:scale-110" strokeWidth={1.5} />
+                    <feature.icon className={`relative w-16 h-16 galactic-purple transition-all duration-300 group-hover:scale-110 ${isDark ? 'group-hover:text-white' : 'group-hover:text-black'}`} strokeWidth={1.5} />
                   </div>
                 </div>
-                <h3 className="text-xl font-bold mb-3 galactic-purple group-hover:text-white transition-colors">
+                <h3 className={`text-xl font-bold mb-3 galactic-purple transition-colors ${isDark ? 'group-hover:text-white' : 'group-hover:text-black'}`}>
                   {feature.title}
                 </h3>
-                <p className="text-white/70 group-hover:text-white/90 transition-colors text-sm leading-relaxed">
+                <p className={`transition-colors text-sm leading-relaxed ${isDark ? 'text-white/70 group-hover:text-white/90' : 'text-black/70 group-hover:text-black/90'}`}>
                   {feature.description}
                 </p>
               </Link>
@@ -159,27 +165,29 @@ const Index = () => {
       </section>
 
       {/* Services Preview */}
-      <section className="relative py-20 px-4 bg-white/5">
+      <section className={`relative py-20 px-4 ${isDark ? 'bg-white/5' : 'bg-black/5'}`}>
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gradient">
             Naše storitve
           </h2>
-          <p className="text-center text-white/70 mb-16 max-w-2xl mx-auto">
+          <p className={`text-center mb-16 max-w-2xl mx-auto ${isDark ? 'text-white/70' : 'text-black/70'}`}>
             Celovite digitalne rešitve za vaš uspeh
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => <div key={service.title} className="glass-purple rounded-xl p-6 group hover:glow-purple transition-all duration-300" style={{
-            animationDelay: `${index * 0.1}s`
-          }}>
+            {services.map((service, index) => (
+              <div key={service.title} className="glass-purple rounded-xl p-6 group hover:glow-purple transition-all duration-300" style={{
+                animationDelay: `${index * 0.1}s`
+              }}>
                 <service.icon className="w-8 h-8 galactic-purple mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className="text-lg font-semibold mb-2 text-white group-hover:galactic-purple transition-colors">
+                <h3 className={`text-lg font-semibold mb-2 transition-colors ${isDark ? 'text-white group-hover:galactic-purple' : 'text-black group-hover:galactic-purple'}`}>
                   {service.title}
                 </h3>
-                <p className="text-white/70">
+                <p className={isDark ? 'text-white/70' : 'text-black/70'}>
                   {service.desc}
                 </p>
-              </div>)}
+              </div>
+            ))}
           </div>
           
           <div className="text-center mt-12">
@@ -196,12 +204,13 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gradient">
             Izbrani projekti
           </h2>
-          <p className="text-center text-white/70 mb-16 max-w-2xl mx-auto">
+          <p className={`text-center mb-16 max-w-2xl mx-auto ${isDark ? 'text-white/70' : 'text-black/70'}`}>
             Oglejte si naša najnovejša dela in dosežke
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {projects.map((project, index) => <div key={project.title} className="glass rounded-xl overflow-hidden group hover:glow-purple transition-all duration-500 hover:scale-105">
+            {projects.map((project, index) => (
+              <div key={project.title} className="glass rounded-xl overflow-hidden group hover:glow-purple transition-all duration-500 hover:scale-105">
                 <div className="h-48 relative overflow-hidden">
                   <img
                     src={project.image}
@@ -212,9 +221,10 @@ const Index = () => {
                 </div>
                 <div className="p-6">
                   <div className="text-sm galactic-purple mb-2">{project.category}</div>
-                  <h3 className="text-lg font-semibold text-white">{project.title}</h3>
+                  <h3 className={`text-lg font-semibold ${isDark ? 'text-white' : 'text-black'}`}>{project.title}</h3>
                 </div>
-              </div>)}
+              </div>
+            ))}
           </div>
           
           <div className="text-center mt-12">
@@ -226,7 +236,7 @@ const Index = () => {
       </section>
 
       {/* Stats Preview */}
-      <section className="relative py-20 px-4 bg-white/5">
+      <section className={`relative py-20 px-4 ${isDark ? 'bg-white/5' : 'bg-black/5'}`}>
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-gradient">
             Paradoks v številkah
@@ -234,32 +244,36 @@ const Index = () => {
           
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[{
-            number: '120+',
-            label: 'Projektov'
-          }, {
-            number: '80+',
-            label: 'Zadovoljnih strank'
-          }, {
-            number: '15+',
-            label: 'Let izkušenj'
-          }, {
-            number: '99%',
-            label: 'Zadovoljstvo'
-          }].map((stat, index) => <div key={index} className="glass-purple rounded-xl p-6 animate-scale-up" style={{
-            animationDelay: `${index * 0.1}s`
-          }}>
+              number: '120+',
+              label: 'Projektov'
+            }, {
+              number: '80+',
+              label: 'Zadovoljnih strank'
+            }, {
+              number: '15+',
+              label: 'Let izkušenj'
+            }, {
+              number: '99%',
+              label: 'Zadovoljstvo'
+            }].map((stat, index) => (
+              <div key={index} className="glass-purple rounded-xl p-6 animate-scale-up" style={{
+                animationDelay: `${index * 0.1}s`
+              }}>
                 <div className="text-3xl md:text-4xl font-bold galactic-purple mb-2">
                   {stat.number}
                 </div>
-                <div className="text-white/80">
+                <div className={isDark ? 'text-white/80' : 'text-black/80'}>
                   {stat.label}
                 </div>
-              </div>)}
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default Index;
