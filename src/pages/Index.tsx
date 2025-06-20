@@ -2,13 +2,10 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-import ThemeToggle from '../components/ThemeToggle';
-import { useTheme } from '../contexts/ThemeContext';
 import { Users, Target, Rocket, Camera, Palette, Video, Bot, TrendingUp, Home, User, FolderOpen, Settings, Mail } from 'lucide-react';
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const { isDark } = useTheme();
 
   useEffect(() => {
     setIsVisible(true);
@@ -87,9 +84,8 @@ const Index = () => {
     }
   ];
   return (
-    <div className={`min-h-screen relative overflow-hidden transition-all duration-300 ${isDark ? 'theme-dark' : 'theme-light'}`}>
+    <div className="min-h-screen relative overflow-hidden bg-black text-white">
       <Navigation />
-      <ThemeToggle />
       
       {/* Background Elements */}
       <div className="fixed inset-0 bg-gradient-radial opacity-50"></div>
@@ -104,12 +100,12 @@ const Index = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight">
             <span className="text-gradient"></span>
             <br />
-            <span className={isDark ? 'text-white' : 'text-black'}>Digitalna agencija</span>
+            <span className="text-white">Digitalna agencija</span>
             <br />
             <span className="galactic-purple">prihodnosti</span>
           </h1>
           
-          <p className={`text-xl md:text-2xl max-w-3xl mx-auto ${isDark ? 'text-white/80' : 'text-black/80'}`}>
+          <p className="text-xl md:text-2xl max-w-3xl mx-auto text-white/80">
             Združujemo estetiko, tehnologijo in učinkovitost.
           </p>
           
@@ -117,7 +113,7 @@ const Index = () => {
             <Link to="/contact" className="bg-galactic-purple px-8 py-4 rounded-full text-white font-semibold glow-purple-hover transition-all duration-300 hover:scale-105">
               Stopi v stik
             </Link>
-            <Link to="/projects" className={`glass border px-8 py-4 rounded-full font-semibold hover:border-galactic-purple transition-all duration-300 hover:scale-105 ${isDark ? 'border-white/20 text-white' : 'border-black/20 text-black'}`}>
+            <Link to="/projects" className="glass border border-white/20 px-8 py-4 rounded-full text-white font-semibold hover:border-galactic-purple transition-all duration-300 hover:scale-105">
               Oglej si projekte
             </Link>
           </div>
@@ -125,7 +121,7 @@ const Index = () => {
         
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className={`w-6 h-10 border-2 rounded-full flex justify-center ${isDark ? 'border-white/30' : 'border-black/30'}`}>
+          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
             <div className="w-1 h-3 bg-galactic-purple rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
@@ -149,13 +145,13 @@ const Index = () => {
                 <div className="mb-6 flex justify-center">
                   <div className="relative">
                     <div className="absolute inset-0 bg-galactic-purple/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300"></div>
-                    <feature.icon className={`relative w-16 h-16 galactic-purple transition-all duration-300 group-hover:scale-110 ${isDark ? 'group-hover:text-white' : 'group-hover:text-black'}`} strokeWidth={1.5} />
+                    <feature.icon className="relative w-16 h-16 galactic-purple transition-all duration-300 group-hover:scale-110 group-hover:text-white" strokeWidth={1.5} />
                   </div>
                 </div>
-                <h3 className={`text-xl font-bold mb-3 galactic-purple transition-colors ${isDark ? 'group-hover:text-white' : 'group-hover:text-black'}`}>
+                <h3 className="text-xl font-bold mb-3 galactic-purple transition-colors group-hover:text-white">
                   {feature.title}
                 </h3>
-                <p className={`transition-colors text-sm leading-relaxed ${isDark ? 'text-white/70 group-hover:text-white/90' : 'text-black/70 group-hover:text-black/90'}`}>
+                <p className="text-white/70 group-hover:text-white/90 transition-colors text-sm leading-relaxed">
                   {feature.description}
                 </p>
               </Link>
@@ -165,12 +161,12 @@ const Index = () => {
       </section>
 
       {/* Services Preview */}
-      <section className={`relative py-20 px-4 ${isDark ? 'bg-white/5' : 'bg-black/5'}`}>
+      <section className="relative py-20 px-4 bg-white/5">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gradient">
             Naše storitve
           </h2>
-          <p className={`text-center mb-16 max-w-2xl mx-auto ${isDark ? 'text-white/70' : 'text-black/70'}`}>
+          <p className="text-center mb-16 max-w-2xl mx-auto text-white/70">
             Celovite digitalne rešitve za vaš uspeh
           </p>
           
@@ -180,10 +176,10 @@ const Index = () => {
                 animationDelay: `${index * 0.1}s`
               }}>
                 <service.icon className="w-8 h-8 galactic-purple mb-4 group-hover:scale-110 transition-transform" />
-                <h3 className={`text-lg font-semibold mb-2 transition-colors ${isDark ? 'text-white group-hover:galactic-purple' : 'text-black group-hover:galactic-purple'}`}>
+                <h3 className="text-lg font-semibold mb-2 text-white group-hover:galactic-purple transition-colors">
                   {service.title}
                 </h3>
-                <p className={isDark ? 'text-white/70' : 'text-black/70'}>
+                <p className="text-white/70">
                   {service.desc}
                 </p>
               </div>
@@ -204,7 +200,7 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gradient">
             Izbrani projekti
           </h2>
-          <p className={`text-center mb-16 max-w-2xl mx-auto ${isDark ? 'text-white/70' : 'text-black/70'}`}>
+          <p className="text-center mb-16 max-w-2xl mx-auto text-white/70">
             Oglejte si naša najnovejša dela in dosežke
           </p>
           
@@ -221,7 +217,7 @@ const Index = () => {
                 </div>
                 <div className="p-6">
                   <div className="text-sm galactic-purple mb-2">{project.category}</div>
-                  <h3 className={`text-lg font-semibold ${isDark ? 'text-white' : 'text-black'}`}>{project.title}</h3>
+                  <h3 className="text-lg font-semibold text-white">{project.title}</h3>
                 </div>
               </div>
             ))}
@@ -236,7 +232,7 @@ const Index = () => {
       </section>
 
       {/* Stats Preview */}
-      <section className={`relative py-20 px-4 ${isDark ? 'bg-white/5' : 'bg-black/5'}`}>
+      <section className="relative py-20 px-4 bg-white/5">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-gradient">
             Paradoks v številkah
@@ -262,7 +258,7 @@ const Index = () => {
                 <div className="text-3xl md:text-4xl font-bold galactic-purple mb-2">
                   {stat.number}
                 </div>
-                <div className={isDark ? 'text-white/80' : 'text-black/80'}>
+                <div className="text-white/80">
                   {stat.label}
                 </div>
               </div>
