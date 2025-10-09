@@ -186,7 +186,7 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {projects.map((project, index) => <div key={project.title} className="glass rounded-xl overflow-hidden group hover:glow-purple transition-all duration-500 hover:scale-105">
-                <div className="h-48 relative overflow-hidden">
+                <div className="aspect-square relative overflow-hidden">
                   <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
                 </div>
