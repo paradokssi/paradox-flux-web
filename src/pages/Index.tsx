@@ -109,8 +109,8 @@ const Index = () => {
           
           <div className="hidden lg:block">
             <img 
-              src="/lovable-uploads/hero-image.png" 
-              alt="Galactic spiral" 
+              src="/lovable-uploads/paradoks.png" 
+              alt="Paradoks spiral" 
               className="w-full h-auto"
             />
           </div>
