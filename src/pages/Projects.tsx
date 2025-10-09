@@ -352,6 +352,19 @@ const Projects = () => {
       ],
       technologies: ['Grafično oblikovanje'],
       details: 'Oblikovali smo grafično podobo Horjulskega Kvinteta v črno-zlati kombinaciji, z logotipom v stilu Oberkrainarja, ki izraža tradicijo, eleganco in prepoznavnost ansambla.'
+    },
+    {
+      id: 20,
+      title: 'TMF Racing',
+      categories: ['Branding'],
+      description: 'Grafično oblikovanje in ilustracija mercha z unikatnim izrisom dirkalnika, ki izraža dinamiko, hitrost in prepoznavnost blagovne znamke.',
+      image: '/lovable-uploads/tmf-1.png',
+      images: [
+        '/lovable-uploads/tmf-1.png',
+        '/lovable-uploads/tmf-2.png'
+      ],
+      technologies: ['Grafično oblikovanje', 'Ilustracija', 'Merch design'],
+      details: 'Grafično oblikovanje in ilustracija mercha z unikatnim izrisom dirkalnika, ki izraža dinamiko, hitrost in prepoznavnost blagovne znamke.'
     }
   ];
 
