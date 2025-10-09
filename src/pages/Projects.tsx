@@ -334,6 +334,24 @@ const Projects = () => {
       ],
       technologies: ['Grafično oblikovanje', 'Ilustracija', 'Oblikovanje tiskovin'],
       details: 'Oblikovali smo zabavnik z pobarvankami, križankami in igrami za podjetje Kolektor Construction. Projekt je vključeval tudi ustvarjanje novih likov – superjunakov gradbincev, ki zabavnik naredijo unikatnega in privlačnega.'
+    },
+    {
+      id: 19,
+      title: 'Horjulski Kvintet',
+      categories: ['Branding'],
+      description: 'Oblikovali smo grafično podobo Horjulskega Kvinteta v črno-zlati kombinaciji, z logotipom v stilu Oberkrainarja, ki izraža tradicijo, eleganco in prepoznavnost ansambla.',
+      image: '/lovable-uploads/horjulski-1.png',
+      images: [
+        '/lovable-uploads/horjulski-1.png',
+        '/lovable-uploads/horjulski-2.png',
+        '/lovable-uploads/horjulski-3.png',
+        '/lovable-uploads/horjulski-4.png',
+        '/lovable-uploads/horjulski-5.png',
+        '/lovable-uploads/horjulski-6.png',
+        '/lovable-uploads/horjulski-7.png'
+      ],
+      technologies: ['Grafično oblikovanje'],
+      details: 'Oblikovali smo grafično podobo Horjulskega Kvinteta v črno-zlati kombinaciji, z logotipom v stilu Oberkrainarja, ki izraža tradicijo, eleganco in prepoznavnost ansambla.'
     }
   ];
 
