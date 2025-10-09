@@ -217,9 +217,9 @@ const Index = () => {
             <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-black to-transparent z-10"></div>
             
             <div className="overflow-hidden">
-              <div className="flex animate-scroll">
-                {[...Array(2)].map((_, setIndex) => (
-                  <div key={setIndex} className="flex shrink-0">
+              <div className="flex animate-scroll hover:[animation-play-state:paused]">
+                {[...Array(3)].map((_, setIndex) => (
+                  <div key={setIndex} className="flex shrink-0 gap-12">
                     {[
                       '/lovable-uploads/client-logo-1.png',
                       '/lovable-uploads/client-logo-2.png',
@@ -232,11 +232,11 @@ const Index = () => {
                       '/lovable-uploads/client-logo-9.png',
                       '/lovable-uploads/client-logo-10.png',
                     ].map((logo, index) => (
-                      <div key={index} className="flex items-center justify-center px-8 shrink-0">
+                      <div key={index} className="flex items-center justify-center shrink-0 w-40">
                         <img 
                           src={logo} 
                           alt={`Client logo ${index + 1}`}
-                          className="h-16 md:h-20 w-auto opacity-50 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
+                          className="max-h-16 max-w-full w-auto object-contain opacity-50 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
                         />
                       </div>
                     ))}
