@@ -219,7 +219,7 @@ const Index = () => {
             <div className="overflow-hidden">
               <div className="flex animate-scroll-fast hover:[animation-play-state:paused]">
                 {[...Array(5)].map((_, setIndex) => (
-                  <div key={setIndex} className="flex shrink-0 gap-16">
+                  <div key={setIndex} className="flex shrink-0 gap-8">
                     {[
                       '/lovable-uploads/clients/kolektor.png',
                       '/lovable-uploads/clients/client-2.png',
