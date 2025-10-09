@@ -379,6 +379,23 @@ const Projects = () => {
       ],
       technologies: ['Grafično oblikovanje', 'Ilustracija', 'Merch design'],
       details: 'Grafično oblikovanje za znamko mercha ViliM, vključno s posebno ilustracijo za kolekcijo Špilam Kolikor Sem Plačan, ki združuje unikaten dizajn in prepoznaven slog.'
+    },
+    {
+      id: 22,
+      title: 'Highlife Club – Instagram',
+      categories: ['Branding'],
+      description: 'Oblikovanje vizualnih objav za Instagram profil Highlife Club, z namenom ustvariti privlačno in konsistentno grafično podobo profila.',
+      image: '/lovable-uploads/highlife-1.png',
+      images: [
+        '/lovable-uploads/highlife-1.png',
+        '/lovable-uploads/highlife-2.png',
+        '/lovable-uploads/highlife-3.png',
+        '/lovable-uploads/highlife-4.png',
+        '/lovable-uploads/highlife-5.png',
+        '/lovable-uploads/highlife-6.png'
+      ],
+      technologies: ['Grafično oblikovanje', 'Social media design'],
+      details: 'Oblikovanje vizualnih objav za Instagram profil Highlife Club, z namenom ustvariti privlačno in konsistentno grafično podobo profila.'
     }
   ];
 
