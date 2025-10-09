@@ -85,7 +85,7 @@ const Index = () => {
       <section className="relative min-h-screen flex items-center px-4">
         <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
           <div className={`space-y-8 text-center lg:text-left ${isVisible ? 'animate-slide-up' : 'opacity-0'}`}>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
               <span className="text-gradient"></span>
               <br />
               <span className="text-white">Oblikujemo prihodnost </span>
@@ -93,7 +93,7 @@ const Index = () => {
               <span className="galactic-purple">vaše blagovne znamke</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-white/80">
+            <p className="text-lg md:text-xl text-white/80">
               Združujemo estetiko, tehnologijo in učinkovitost.
             </p>
             
