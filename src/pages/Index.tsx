@@ -217,8 +217,8 @@ const Index = () => {
             <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-black to-transparent z-10"></div>
             
             <div className="overflow-hidden">
-              <div className="flex animate-scroll hover:[animation-play-state:paused]">
-                {[...Array(3)].map((_, setIndex) => (
+              <div className="flex animate-scroll-fast hover:[animation-play-state:paused]">
+                {[...Array(4)].map((_, setIndex) => (
                   <div key={setIndex} className="flex shrink-0 gap-12">
                     {[
                       '/lovable-uploads/client-logo-1.png',
