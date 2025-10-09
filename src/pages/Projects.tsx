@@ -439,6 +439,25 @@ const Projects = () => {
       ],
       technologies: ['UI/UX dizajn', 'Spletna stran', 'Grafično oblikovanje'],
       details: 'Izdelava UI in UX dizajna za prodajno spletno stran, posebej zasnovane za maksimalno prodajnost in visoke konverzije. Dizajn vključuje intuitivno navigacijo, jasno strukturo produktov in vizualne elemente, ki usmerjajo uporabnika k nakupu. Poleg tega smo ustvarili platformo z bogato fitnes vsebino, ki uporabnikom nudi dodano vrednost in krepi angažiranost. Barvna paleta temelji na roza odtenkih, skladno z CGP, kar ustvarja prijetno in prepoznavno vizualno identiteto.'
+    },
+    {
+      id: 26,
+      title: 'HK Olimpija',
+      categories: ['Social Media', 'Branding'],
+      description: 'Za agencijo GREAT smo ustvarili objave in Photoshop montaže za hokejski klub Olimpija, z namenom izboljšanja vizualne predstavitve in povečanja angažiranosti na družbenih omrežjih.',
+      image: '/lovable-uploads/hk-olimpija-1.png',
+      images: [
+        '/lovable-uploads/hk-olimpija-1.png',
+        '/lovable-uploads/hk-olimpija-2.png',
+        '/lovable-uploads/hk-olimpija-3.jpg',
+        '/lovable-uploads/hk-olimpija-4.jpg',
+        '/lovable-uploads/hk-olimpija-5.jpg',
+        '/lovable-uploads/hk-olimpija-6.jpg',
+        '/lovable-uploads/hk-olimpija-7.jpg',
+        '/lovable-uploads/hk-olimpija-8.jpg'
+      ],
+      technologies: ['Grafično oblikovanje', 'Photoshop', 'Social media design'],
+      details: 'Za agencijo GREAT smo ustvarili objave in Photoshop montaže za hokejski klub Olimpija, z namenom izboljšanja vizualne predstavitve in povečanja angažiranosti na družbenih omrežjih.'
     }
   ];
 
