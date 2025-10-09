@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { Button } from './ui/button';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,8 +10,7 @@ const Navigation = () => {
     { name: 'Domov', path: '/' },
     { name: 'O nas', path: '/about' },
     { name: 'Projekti', path: '/projects' },
-    { name: 'Storitve', path: '/services' },
-    { name: 'Kontakt', path: '/contact' }
+    { name: 'Storitve', path: '/services' }
   ];
 
   return (
@@ -26,7 +26,7 @@ const Navigation = () => {
           </Link>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -40,6 +40,11 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
+            <Link to="/contact">
+              <Button className="bg-galactic-purple hover:bg-galactic-purple/90 text-white rounded-full px-6 py-2 font-medium transition-all duration-300">
+                Stopi v stik
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -77,6 +82,15 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
+              <Link
+                to="/contact"
+                onClick={() => setIsOpen(false)}
+                className="block mx-3 mt-4"
+              >
+                <Button className="w-full bg-galactic-purple hover:bg-galactic-purple/90 text-white rounded-full px-6 py-2 font-medium transition-all duration-300">
+                  Stopi v stik
+                </Button>
+              </Link>
             </div>
           </div>
         )}
