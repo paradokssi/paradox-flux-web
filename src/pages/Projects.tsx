@@ -13,7 +13,7 @@ const Projects = () => {
     {
       id: 1,
       title: 'Glasbena šola Vili Marinšek',
-      category: 'Branding',
+      categories: ['Branding', 'Spletna stran'],
       description: 'Za Glasbeno šolo Vili Marinšek je bila izvedena celostna prenova vizualne identitete, s ciljem osvežitve podobe in boljše komunikacije s ciljnimi skupinami. Projekt združuje klasično glasbeno estetiko s sodobnim, dostopnim oblikovanjem, primernim za mlade učence in starše.',
       image: '/lovable-uploads/vm-1.png',
       images: [
@@ -32,7 +32,7 @@ const Projects = () => {
     {
       id: 2,
       title: 'Nejc Velkavrh Produkcija',
-      category: 'Branding',
+      categories: ['Branding', 'Spletna stran'],
       description: 'Za Nejc Velkavrh Produkcija sem pripravil celostno grafično podobo, ki odraža profesionalnost in kreativnost v svetu videoprodukcije. Vizualna identiteta temelji na sodobnem, čistem dizajnu z močnim poudarkom na osebni blagovni znamki.',
       image: '/lovable-uploads/nv-1.png',
       images: [
@@ -50,7 +50,7 @@ const Projects = () => {
     {
       id: 3,
       title: 'Toper – Lifestyle fotografiranje',
-      category: 'Fotografija',
+      categories: ['Fotografija'],
       description: 'Za blagovno znamko Toper smo v sodelovanju z agencijo Great Agency izvedli lifestyle fotografiranje ob jezeru Jasna. Fotografirali smo dva modela v kolekciji oblačil Toper, z namenom ustvariti naravne, avtentične vizuale za spletno stran in družbena omrežja.',
       image: '/lovable-uploads/toper-1.jpg',
       images: [
@@ -71,7 +71,7 @@ const Projects = () => {
     {
       id: 4,
       title: 'Gripsi',
-      category: 'Branding',
+      categories: ['Branding'],
       description: 'Za blagovno znamko Gripsi smo zasnovali celostno grafično podobo in strategijo vizualne identitete. Ključni element logotipa je minimalistična ikona, ki združuje črko G in simbol neskončnosti – kar ponazarja neprekinjen razvoj, zanesljivost in inovativnost znamke.',
       image: '/lovable-uploads/gripsi-1.png',
       images: [
@@ -88,7 +88,7 @@ const Projects = () => {
     {
       id: 5,
       title: 'Šabec Transport',
-      category: 'Branding',
+      categories: ['Branding', 'Spletna stran'],
       description: 'Za podjetje Šabec Transport smo ustvarili prepoznavno grafično podobo, sodobno spletno stran ter celovit nabor promocijskih materialov in tiskovin. Logotip združuje motiv ceste in črko Š, kar simbolizira povezanost, gibanje in zanesljivost.',
       image: '/lovable-uploads/st-1.png',
       images: [
@@ -107,7 +107,7 @@ const Projects = () => {
     {
       id: 6,
       title: 'Kovinoplastika',
-      category: 'Fotografija',
+      categories: ['Branding', 'Spletna stran', 'Fotografija'],
       description: 'Za podjetje Kovinoplastika smo zasnovali celostno grafično podobo in sodobno spletno stran, dopolnjeno s promocijskimi materiali, tiskovinami ter prodajnimi predstavitvami in katalogom izdelkov.',
       image: '/lovable-uploads/kp-1.png',
       images: [
@@ -130,7 +130,7 @@ const Projects = () => {
     {
       id: 7,
       title: 'Košarkarsko društvo Postojna',
-      category: 'Branding',
+      categories: ['Branding'],
       description: 'Za Košarkarsko društvo Postojna smo pripravili celovito strategijo prenove kluba, posodobili grafično podobo, oblikovali nove drese, tiskovine ter sodelovali pri organizaciji dogodkov.',
       image: '/lovable-uploads/kdp-1.png',
       images: [
@@ -149,7 +149,7 @@ const Projects = () => {
     {
       id: 8,
       title: 'Vizion Investment',
-      category: 'Branding',
+      categories: ['Branding', 'Spletna stran'],
       description: 'V sodelovanju z agencijo GREAT smo za podjetje Vizion Investment razvili novo grafično podobo, zasnovali promocijske materiale in oblikovali spletno stran, ki odraža eleganco in prestiž sveta investicij.',
       image: '/lovable-uploads/vizion-1.png',
       images: [
@@ -168,7 +168,7 @@ const Projects = () => {
     {
       id: 9,
       title: 'Ansambel Obisk',
-      category: 'Branding',
+      categories: ['Branding'],
       description: 'Za Ansambel Obisk smo oblikovali novo grafično podobo in pripravili tiskovine, ki poudarjajo prepoznavnost in glasbeni značaj skupine.',
       image: '/lovable-uploads/obisk-1.png',
       images: [
@@ -184,7 +184,7 @@ const Projects = () => {
     {
       id: 10,
       title: 'Marija',
-      category: 'Fotografija',
+      categories: ['Fotografija'],
       description: 'Studijsko fotografiranje modela v vintage stilu, združenem z modernim pridihom. Fotografije izražajo preprostost, eleganco in toplino.',
       image: '/lovable-uploads/marija-1.jpg',
       images: [
@@ -205,7 +205,7 @@ const Projects = () => {
     {
       id: 11,
       title: 'Boudoir fotografiranje',
-      category: 'Fotografija',
+      categories: ['Fotografija'],
       description: 'Intimno boudoir fotografiranje, ki združuje čutnost in eleganco s prefinjenim stilom ter mehkimi svetlobnimi efekti.',
       image: '/lovable-uploads/boudoir-1.jpg',
       images: [
@@ -226,12 +226,12 @@ const Projects = () => {
   ];
 
   // Get unique categories
-  const categories = ['Vse', ...Array.from(new Set(projects.map(project => project.category)))];
+  const categories = ['Vse', ...Array.from(new Set(projects.flatMap(project => project.categories)))];
 
   // Filter projects based on selected filter
   const filteredProjects = selectedFilter === 'Vse' 
     ? projects 
-    : projects.filter(project => project.category === selectedFilter);
+    : projects.filter(project => project.categories.includes(selectedFilter));
 
   return (
     <div className="min-h-screen bg-black relative overflow-hidden">
@@ -295,10 +295,12 @@ const Projects = () => {
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-all duration-300"></div>
-                  <div className="absolute top-4 right-4">
-                    <span className="glass-purple px-3 py-1 rounded-full text-sm font-medium">
-                      {project.category}
-                    </span>
+                  <div className="absolute top-4 right-4 flex gap-2">
+                    {project.categories.map((cat, catIndex) => (
+                      <span key={catIndex} className="glass-purple px-3 py-1 rounded-full text-sm font-medium">
+                        {cat}
+                      </span>
+                    ))}
                   </div>
                 </div>
                 
@@ -376,9 +378,13 @@ const Projects = () => {
                       <h2 className="text-2xl font-bold galactic-purple">
                         {project.title}
                       </h2>
-                      <span className="glass px-3 py-1 rounded-full text-sm">
-                        {project.category}
-                      </span>
+                      <div className="flex gap-2">
+                        {project.categories.map((cat, catIndex) => (
+                          <span key={catIndex} className="glass px-3 py-1 rounded-full text-sm">
+                            {cat}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                     
                     <p className="text-white/80 mb-6">
