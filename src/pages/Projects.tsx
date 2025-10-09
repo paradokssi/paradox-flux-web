@@ -322,6 +322,18 @@ const Projects = () => {
       technologies: ['Video produkcija', 'Fotografija'],
       details: 'Video in foto produkcija celotnega dogodka, zajem vsega dogajanja, vzdušja in ključnih trenutkov za promocijo in arhiv.',
       videoUrl: 'https://www.youtube.com/embed/HsNxiX0whLg'
+    },
+    {
+      id: 18,
+      title: 'Kolektor Construction Zabavnik',
+      categories: ['Branding'],
+      description: 'Oblikovali smo zabavnik z pobarvankami, križankami in igrami za podjetje Kolektor Construction. Projekt je vključeval tudi ustvarjanje novih likov – superjunakov gradbincev, ki zabavnik naredijo unikatnega in privlačnega.',
+      image: '/lovable-uploads/kolektor-construction-1.png',
+      images: [
+        '/lovable-uploads/kolektor-construction-1.png'
+      ],
+      technologies: ['Grafično oblikovanje', 'Ilustracija', 'Oblikovanje tiskovin'],
+      details: 'Oblikovali smo zabavnik z pobarvankami, križankami in igrami za podjetje Kolektor Construction. Projekt je vključeval tudi ustvarjanje novih likov – superjunakov gradbincev, ki zabavnik naredijo unikatnega in privlačnega.'
     }
   ];
 
