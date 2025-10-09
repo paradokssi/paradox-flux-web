@@ -118,6 +118,25 @@ const Projects = () => {
       ],
       technologies: ['Grafično oblikovanje', 'Spletna stran', 'Tiskovine', 'Foto in video produkcija', 'Studijska fotografija', 'Katalog izdelkov'],
       details: 'Za podjetje Kovinoplastika smo zasnovali celostno grafično podobo in sodobno spletno stran, dopolnjeno s promocijskimi materiali, tiskovinami ter prodajnimi predstavitvami in katalogom izdelkov. Izvedli smo tudi studijsko fotografiranje ter foto in video produkcijo proizvodnega procesa, s čimer smo poudarili natančnost in kakovost izdelave. Vizualna identiteta temelji na modrih tonih in sivinah, ki izražajo tehnično zanesljivost, stabilnost in strokovnost podjetja.'
+    },
+    {
+      id: 7,
+      title: 'Košarkarsko društvo Postojna',
+      category: 'Branding',
+      description: 'Za Košarkarsko društvo Postojna smo pripravili celovito strategijo prenove kluba, posodobili grafično podobo, oblikovali nove drese, tiskovine ter sodelovali pri organizaciji dogodkov.',
+      image: '/lovable-uploads/kdp-1.png',
+      images: [
+        '/lovable-uploads/kdp-1.png',
+        '/lovable-uploads/kdp-2.png',
+        '/lovable-uploads/kdp-3.png',
+        '/lovable-uploads/kdp-4.png',
+        '/lovable-uploads/kdp-5.png',
+        '/lovable-uploads/kdp-6.png',
+        '/lovable-uploads/kdp-7.png',
+        '/lovable-uploads/kdp-8.png'
+      ],
+      technologies: ['Strategija blagovne znamke', 'Grafično oblikovanje', 'Oblikovanje dresov', 'Tiskovine', 'Organizacija dogodkov'],
+      details: 'Za Košarkarsko društvo Postojna smo pripravili celovito strategijo prenove kluba, posodobili grafično podobo, oblikovali nove drese, tiskovine ter sodelovali pri organizaciji dogodkov. Osrednji element novega grba združuje človeško ribico – simbol podzemnega sveta Postojnske jame – in zmaja iz legende o pastirčku, ki predstavlja moč, pogum in vztrajnost. Ta spoj ustvarja edinstveno zgodbo kluba, ki temelji na lokalni identiteti in športnem duhu. Vizualna podoba ohranja izvorne barve kluba, medtem ko luske na dresih subtilno ponazarjajo zmajevo moč in zaščito.'
     }
   ];
 
