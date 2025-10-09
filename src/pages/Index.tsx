@@ -218,25 +218,25 @@ const Index = () => {
             
             <div className="overflow-hidden">
               <div className="flex animate-scroll-fast hover:[animation-play-state:paused]">
-                {[...Array(4)].map((_, setIndex) => (
-                  <div key={setIndex} className="flex shrink-0 gap-12">
+                {[...Array(5)].map((_, setIndex) => (
+                  <div key={setIndex} className="flex shrink-0 gap-16">
                     {[
-                      '/lovable-uploads/client-logo-1.png',
-                      '/lovable-uploads/client-logo-2.png',
-                      '/lovable-uploads/client-logo-3.png',
-                      '/lovable-uploads/client-logo-4.png',
-                      '/lovable-uploads/client-logo-5.png',
-                      '/lovable-uploads/client-logo-6.png',
-                      '/lovable-uploads/client-logo-7.png',
-                      '/lovable-uploads/client-logo-8.png',
-                      '/lovable-uploads/client-logo-9.png',
-                      '/lovable-uploads/client-logo-10.png',
+                      '/lovable-uploads/clients/kolektor.png',
+                      '/lovable-uploads/clients/client-2.png',
+                      '/lovable-uploads/clients/client-3.png',
+                      '/lovable-uploads/clients/kosarkarsko-drustvo.png',
+                      '/lovable-uploads/clients/kovino.png',
+                      '/lovable-uploads/clients/client-6.png',
+                      '/lovable-uploads/clients/mama-moves.png',
+                      '/lovable-uploads/clients/client-8.png',
+                      '/lovable-uploads/clients/digit.png',
+                      '/lovable-uploads/clients/highlife.png',
                     ].map((logo, index) => (
-                      <div key={index} className="flex items-center justify-center shrink-0 w-40">
+                      <div key={index} className="flex items-center justify-center shrink-0 w-48">
                         <img 
                           src={logo} 
                           alt={`Client logo ${index + 1}`}
-                          className="max-h-16 max-w-full w-auto object-contain opacity-50 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
+                          className="max-h-20 max-w-full w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
                         />
                       </div>
                     ))}
