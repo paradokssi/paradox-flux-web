@@ -61,15 +61,15 @@ const Index = () => {
   const projects = [{
     title: 'Glasbena šola Vili Marinšek',
     category: 'Branding',
-    image: '/lovable-uploads/7627c78b-2a3b-4e3f-8877-d423e70877fa.png'
-  }, {
-    title: 'Nejc Velkavrh Produkcija',
-    category: 'Branding',
-    image: '/lovable-uploads/02f212e9-aecc-4bd4-8277-3f142561eccc.png'
+    image: '/lovable-uploads/vm-1.png'
   }, {
     title: 'Toper – Lifestyle fotografiranje',
     category: 'Fotografija',
-    image: '/lovable-uploads/c4ce2d6e-50c2-4fab-a65e-487f54529cb6.png'
+    image: '/lovable-uploads/toper-1.jpg'
+  }, {
+    title: 'Dan Kolektorja 2023',
+    category: 'Video produkcija',
+    image: '/lovable-uploads/kolektor-dan-1.png'
   }];
   return <div className="min-h-screen relative overflow-hidden bg-black text-white">
       <Navigation />
