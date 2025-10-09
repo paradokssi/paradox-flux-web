@@ -180,6 +180,27 @@ const Projects = () => {
       ],
       technologies: ['Grafično oblikovanje', 'Tiskovine'],
       details: 'Za Ansambel Obisk smo oblikovali novo grafično podobo in pripravili tiskovine, ki poudarjajo prepoznavnost in glasbeni značaj skupine. Glavni element logotipa je črka O, združena z glasbeno noto, kar simbolizira povezanost med identiteto ansambla in njegovo glasbo. Barvna paleta temelji na rdečih odtenkih, značilnih za oberkrainerski slog, ki izražajo energijo, tradicijo in veselje do glasbe.'
+    },
+    {
+      id: 10,
+      title: 'Marija',
+      category: 'Fotografija',
+      description: 'Studijsko fotografiranje modela v vintage stilu, združenem z modernim pridihom. Fotografije izražajo preprostost, eleganco in toplino.',
+      image: '/lovable-uploads/marija-1.jpg',
+      images: [
+        '/lovable-uploads/marija-1.jpg',
+        '/lovable-uploads/marija-2.jpg',
+        '/lovable-uploads/marija-3.jpg',
+        '/lovable-uploads/marija-4.jpg',
+        '/lovable-uploads/marija-5.jpg',
+        '/lovable-uploads/marija-6.jpg',
+        '/lovable-uploads/marija-7.jpg',
+        '/lovable-uploads/marija-8.jpg',
+        '/lovable-uploads/marija-9.jpg',
+        '/lovable-uploads/marija-10.jpg'
+      ],
+      technologies: ['Studijska fotografija', 'Urejanje fotografij', 'Vsebina za družbena omrežja'],
+      details: 'Studijsko fotografiranje modela v vintage stilu, združenem z modernim pridihom. Fotografije izražajo preprostost, eleganco in toplino.'
     }
   ];
 
