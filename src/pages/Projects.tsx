@@ -458,6 +458,19 @@ const Projects = () => {
       ],
       technologies: ['Grafično oblikovanje', 'Photoshop', 'Social media design'],
       details: 'Za agencijo GREAT smo ustvarili objave in Photoshop montaže za hokejski klub Olimpija, z namenom izboljšanja vizualne predstavitve in povečanja angažiranosti na družbenih omrežjih.'
+    },
+    {
+      id: 27,
+      title: 'Prodajni Banner Oglasi',
+      categories: ['Branding', 'Social Media'],
+      description: 'Izdelava prodajnih bannerjev za agencijo GREAT za podjetja kot so HOFER, Alpina, FitAkademija, Bestway, Toper, Elan, Vitapur in drugi. Bannerji so zasnovani na prodajnem nivoju, z močno vizualno privlačnostjo, jasnim sporočilom in strategijo, ki povečuje angažiranost ter zagotavlja visoko konverzijo.',
+      image: '/lovable-uploads/ads-1.png',
+      images: [
+        '/lovable-uploads/ads-1.png',
+        '/lovable-uploads/ads-2.png'
+      ],
+      technologies: ['Grafično oblikovanje', 'Banner design'],
+      details: 'Izdelava prodajnih bannerjev za agencijo GREAT za podjetja kot so HOFER, Alpina, FitAkademija, Bestway, Toper, Elan, Vitapur in drugi. Bannerji so zasnovani na prodajnem nivoju, z močno vizualno privlačnostjo, jasnim sporočilom in strategijo, ki povečuje angažiranost ter zagotavlja visoko konverzijo.'
     }
   ];
 
