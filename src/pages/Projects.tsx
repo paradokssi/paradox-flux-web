@@ -52,13 +52,18 @@ const Projects = () => {
       title: 'Toper – Lifestyle fotografiranje',
       category: 'Fotografija',
       description: 'Za blagovno znamko Toper smo v sodelovanju z agencijo Great Agency izvedli lifestyle fotografiranje ob jezeru Jasna. Fotografirali smo dva modela v kolekciji oblačil Toper, z namenom ustvariti naravne, avtentične vizuale za spletno stran in družbena omrežja.',
-      image: '/lovable-uploads/c4ce2d6e-50c2-4fab-a65e-487f54529cb6.png',
+      image: '/lovable-uploads/toper-1.jpg',
       images: [
-        '/lovable-uploads/c4ce2d6e-50c2-4fab-a65e-487f54529cb6.png',
-        '/lovable-uploads/e173e791-08bd-48ac-a789-d5a09a606d78.png',
-        '/lovable-uploads/ca4c0184-e2c1-4826-a45a-d3e45cac69cf.png',
-        '/lovable-uploads/5a9de308-a5b6-4d58-b5c7-f090252c9e05.png',
-        '/lovable-uploads/3c988df9-3363-4a0b-8655-114b79dd86a1.png'
+        '/lovable-uploads/toper-1.jpg',
+        '/lovable-uploads/toper-2.jpg',
+        '/lovable-uploads/toper-3.jpg',
+        '/lovable-uploads/toper-4.jpg',
+        '/lovable-uploads/toper-5.jpg',
+        '/lovable-uploads/toper-6.jpg',
+        '/lovable-uploads/toper-7.jpg',
+        '/lovable-uploads/toper-8.jpg',
+        '/lovable-uploads/toper-9.jpg',
+        '/lovable-uploads/toper-10.jpg'
       ],
       technologies: ['Fotografiranje', 'Urejanje fotografij', 'Vsebina za spletno stran', 'Vsebina za družbena omrežja'],
       details: 'Za blagovno znamko Toper smo v sodelovanju z agencijo Great Agency izvedli lifestyle fotografiranje ob jezeru Jasna. Fotografirali smo dva modela v kolekciji oblačil Toper, z namenom ustvariti naravne, avtentične vizuale za spletno stran in družbena omrežja. Ambient gorskega jezera je dopolnil sproščeno, a vizualno močno zgodbo znamke.'
