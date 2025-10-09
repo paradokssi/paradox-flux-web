@@ -210,17 +210,16 @@
 }
 
 @keyframes infinite-scroll {
-  from {
+  0% {
     transform: translateX(0);
   }
-  to {
-    transform: translateX(calc(-100% - 1rem));
+  100% {
+    transform: translateX(-50%);
   }
 }
 
 .animate-infinite-scroll {
   animation: infinite-scroll 20s linear infinite;
-  will-change: transform;
 }
 
 /* Scrollbar styling */
