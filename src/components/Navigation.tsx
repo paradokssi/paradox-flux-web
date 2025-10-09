@@ -88,7 +88,7 @@ const Navigation = () => {
                   <div className="pb-8">
                     <div className="flex items-center justify-center gap-6">
                       <a 
-                        href="https://instagram.com" 
+                        href="https://www.instagram.com/paradoks.si/" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="text-white/60 hover:text-galactic-purple transition-colors"
@@ -96,7 +96,7 @@ const Navigation = () => {
                         <Instagram className="h-6 w-6" />
                       </a>
                       <a 
-                        href="https://facebook.com" 
+                        href="https://www.facebook.com/nejcsabec11/?locale=sl_SI" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="text-white/60 hover:text-galactic-purple transition-colors"
@@ -104,7 +104,7 @@ const Navigation = () => {
                         <Facebook className="h-6 w-6" />
                       </a>
                       <a 
-                        href="https://linkedin.com" 
+                        href="https://www.linkedin.com/in/nejc-%C5%A1abec-93573723a/?originalSubdomain=si" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="text-white/60 hover:text-galactic-purple transition-colors"
