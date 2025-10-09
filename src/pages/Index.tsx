@@ -84,7 +84,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center px-4">
         <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
-          <div className={`space-y-8 ${isVisible ? 'animate-slide-up' : 'opacity-0'}`}>
+          <div className={`space-y-8 text-center lg:text-left ${isVisible ? 'animate-slide-up' : 'opacity-0'}`}>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight">
               <span className="text-gradient"></span>
               <br />
@@ -97,7 +97,7 @@ const Index = () => {
               Združujemo estetiko, tehnologijo in učinkovitost.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-6 mt-12">
+            <div className="flex flex-col sm:flex-row gap-6 mt-12 items-center lg:items-start">
               <Link to="/contact" className="bg-galactic-purple px-8 py-4 rounded-full text-white font-semibold glow-purple-hover transition-all duration-300 hover:scale-105">
                 Stopi v stik
               </Link>
