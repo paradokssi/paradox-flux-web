@@ -230,6 +230,16 @@ const Index = () => {
                     '/lovable-uploads/clients/client-8.png',
                     '/lovable-uploads/clients/digit.png',
                     '/lovable-uploads/clients/highlife.png',
+                    '/lovable-uploads/clients/new-1.png',
+                    '/lovable-uploads/clients/new-2.png',
+                    '/lovable-uploads/clients/new-3.png',
+                    '/lovable-uploads/clients/new-4.png',
+                    '/lovable-uploads/clients/new-5.png',
+                    '/lovable-uploads/clients/new-6.png',
+                    '/lovable-uploads/clients/new-7.png',
+                    '/lovable-uploads/clients/new-8.png',
+                    '/lovable-uploads/clients/new-9.png',
+                    '/lovable-uploads/clients/new-10.png',
                   ].map((logo, index) => (
                     <div key={index} className="flex items-center justify-center shrink-0" style={{ width: '200px' }}>
                       <img 
@@ -253,6 +263,16 @@ const Index = () => {
                     '/lovable-uploads/clients/client-8.png',
                     '/lovable-uploads/clients/digit.png',
                     '/lovable-uploads/clients/highlife.png',
+                    '/lovable-uploads/clients/new-1.png',
+                    '/lovable-uploads/clients/new-2.png',
+                    '/lovable-uploads/clients/new-3.png',
+                    '/lovable-uploads/clients/new-4.png',
+                    '/lovable-uploads/clients/new-5.png',
+                    '/lovable-uploads/clients/new-6.png',
+                    '/lovable-uploads/clients/new-7.png',
+                    '/lovable-uploads/clients/new-8.png',
+                    '/lovable-uploads/clients/new-9.png',
+                    '/lovable-uploads/clients/new-10.png',
                   ].map((logo, index) => (
                     <div key={`duplicate-${index}`} className="flex items-center justify-center shrink-0" style={{ width: '200px' }}>
                       <img 
