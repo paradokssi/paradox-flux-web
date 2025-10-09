@@ -365,6 +365,20 @@ const Projects = () => {
       ],
       technologies: ['Grafično oblikovanje', 'Ilustracija', 'Merch design'],
       details: 'Grafično oblikovanje in ilustracija mercha z unikatnim izrisom dirkalnika, ki izraža dinamiko, hitrost in prepoznavnost blagovne znamke.'
+    },
+    {
+      id: 21,
+      title: 'Špilam Kolikor Sem Plačan',
+      categories: ['Branding'],
+      description: 'Grafično oblikovanje za znamko mercha ViliM, vključno s posebno ilustracijo za kolekcijo Špilam Kolikor Sem Plačan, ki združuje unikaten dizajn in prepoznaven slog.',
+      image: '/lovable-uploads/vilim-1.png',
+      images: [
+        '/lovable-uploads/vilim-1.png',
+        '/lovable-uploads/vilim-2.png',
+        '/lovable-uploads/vilim-3.png'
+      ],
+      technologies: ['Grafično oblikovanje', 'Ilustracija', 'Merch design'],
+      details: 'Grafično oblikovanje za znamko mercha ViliM, vključno s posebno ilustracijo za kolekcijo Špilam Kolikor Sem Plačan, ki združuje unikaten dizajn in prepoznaven slog.'
     }
   ];
 
