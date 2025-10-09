@@ -243,6 +243,25 @@ const Projects = () => {
       ],
       technologies: ['Fotografija', 'Studijsko fotografiranje', 'Outdoor fotografija'],
       details: 'Outdoor in studijsko fotografiranje benda, ki združuje energijo nastopa in umetniško prefinjenost.'
+    },
+    {
+      id: 13,
+      title: 'OrtoMG',
+      categories: ['Fotografija'],
+      description: 'Fotografiranje klinike OrtoMG v njihovih prostorih za spletno stran in socialna omrežja, z fokusom na profesionalnost in prijazno vzdušje.',
+      image: '/lovable-uploads/ortomg-1.jpg',
+      images: [
+        '/lovable-uploads/ortomg-1.jpg',
+        '/lovable-uploads/ortomg-2.jpg',
+        '/lovable-uploads/ortomg-3.jpg',
+        '/lovable-uploads/ortomg-4.jpg',
+        '/lovable-uploads/ortomg-5.jpg',
+        '/lovable-uploads/ortomg-6.jpg',
+        '/lovable-uploads/ortomg-7.jpg',
+        '/lovable-uploads/ortomg-8.jpg'
+      ],
+      technologies: ['Fotografija', 'Studijsko fotografiranje'],
+      details: 'Fotografiranje klinike OrtoMG v njihovih prostorih za spletno stran in socialna omrežja, z fokusom na profesionalnost in prijazno vzdušje.'
     }
   ];
 
