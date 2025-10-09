@@ -222,6 +222,27 @@ const Projects = () => {
       ],
       technologies: ['Fotografija', 'Urejanje fotografij'],
       details: 'Intimno boudoir fotografiranje, ki združuje čutnost in eleganco s prefinjenim stilom ter mehkimi svetlobnimi efekti.'
+    },
+    {
+      id: 12,
+      title: 'Miki Vlahovič',
+      categories: ['Fotografija'],
+      description: 'Outdoor in studijsko fotografiranje benda, ki združuje energijo nastopa in umetniško prefinjenost.',
+      image: '/lovable-uploads/miki-1.jpg',
+      images: [
+        '/lovable-uploads/miki-1.jpg',
+        '/lovable-uploads/miki-2.jpg',
+        '/lovable-uploads/miki-3.jpg',
+        '/lovable-uploads/miki-4.jpg',
+        '/lovable-uploads/miki-5.jpg',
+        '/lovable-uploads/miki-6.jpg',
+        '/lovable-uploads/miki-7.jpg',
+        '/lovable-uploads/miki-8.jpg',
+        '/lovable-uploads/miki-9.jpg',
+        '/lovable-uploads/miki-10.jpg'
+      ],
+      technologies: ['Fotografija', 'Studijsko fotografiranje', 'Outdoor fotografija'],
+      details: 'Outdoor in studijsko fotografiranje benda, ki združuje energijo nastopa in umetniško prefinjenost.'
     }
   ];
 
