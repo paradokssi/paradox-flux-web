@@ -429,7 +429,7 @@ const Projects = () => {
     {
       id: 25,
       title: 'Forma By Eva',
-      categories: ['Web Design', 'UI/UX'],
+      categories: ['Spletna stran'],
       description: 'Izdelava UI in UX dizajna za prodajno spletno stran, posebej zasnovane za maksimalno prodajnost in visoke konverzije.',
       image: '/lovable-uploads/forma-1.png',
       images: [
