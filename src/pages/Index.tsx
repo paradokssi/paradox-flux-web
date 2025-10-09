@@ -111,7 +111,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/hero-main.png" 
               alt="Paradoks" 
-              className="w-full h-auto"
+              className="w-full h-auto scale-125"
             />
           </div>
         </div>
