@@ -408,6 +408,23 @@ const Projects = () => {
       ],
       technologies: ['Grafično oblikovanje', 'Tiskovine'],
       details: 'Oblikovanje jumbo plakata za Agencijo GO4 Digit, ki združuje jasen vizual in močno sporočilo za učinkovito promocijo blagovne znamke ASTECH.'
+    },
+    {
+      id: 24,
+      title: 'NU Rally',
+      categories: ['Social Media', 'Branding'],
+      description: 'Oblikovanje objav za Instagram profil ameriškega kluba športnih in luksuznih avtomobilov NU Rally, z namenom ustvariti privlačno in prepoznavno vizualno podobo.',
+      image: '/lovable-uploads/nu-rally-1.png',
+      images: [
+        '/lovable-uploads/nu-rally-1.png',
+        '/lovable-uploads/nu-rally-2.png',
+        '/lovable-uploads/nu-rally-3.png',
+        '/lovable-uploads/nu-rally-4.png',
+        '/lovable-uploads/nu-rally-5.png',
+        '/lovable-uploads/nu-rally-6.png'
+      ],
+      technologies: ['Grafično oblikovanje', 'Social media design'],
+      details: 'Oblikovanje objav za Instagram profil ameriškega kluba športnih in luksuznih avtomobilov NU Rally, z namenom ustvariti privlačno in prepoznavno vizualno podobo.'
     }
   ];
 
