@@ -102,7 +102,7 @@ const Projects = () => {
     {
       id: 6,
       title: 'Kovinoplastika',
-      category: 'Branding',
+      category: 'Fotografija',
       description: 'Za podjetje Kovinoplastika smo zasnovali celostno grafično podobo in sodobno spletno stran, dopolnjeno s promocijskimi materiali, tiskovinami ter prodajnimi predstavitvami in katalogom izdelkov.',
       image: '/lovable-uploads/kp-1.png',
       images: [
@@ -114,7 +114,10 @@ const Projects = () => {
         '/lovable-uploads/kp-6.png',
         '/lovable-uploads/kp-7.png',
         '/lovable-uploads/kp-7-1.png',
-        '/lovable-uploads/kp-8.png'
+        '/lovable-uploads/kp-8.png',
+        '/lovable-uploads/kp-9.png',
+        '/lovable-uploads/kp-10.png',
+        '/lovable-uploads/kp-11.png'
       ],
       technologies: ['Grafično oblikovanje', 'Spletna stran', 'Tiskovine', 'Foto in video produkcija', 'Studijska fotografija', 'Katalog izdelkov'],
       details: 'Za podjetje Kovinoplastika smo zasnovali celostno grafično podobo in sodobno spletno stran, dopolnjeno s promocijskimi materiali, tiskovinami ter prodajnimi predstavitvami in katalogom izdelkov. Izvedli smo tudi studijsko fotografiranje ter foto in video produkcijo proizvodnega procesa, s čimer smo poudarili natančnost in kakovost izdelave. Vizualna identiteta temelji na modrih tonih in sivinah, ki izražajo tehnično zanesljivost, stabilnost in strokovnost podjetja.'
