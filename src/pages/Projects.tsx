@@ -282,6 +282,18 @@ const Projects = () => {
       ],
       technologies: ['Outdoor fotografija', 'Avtomobilska fotografija'],
       details: 'Fotografiranje športnega avtomobila Lamborghini Revuelto na lokaciji Malega Lošinja, z fokusom na eleganco in moč vozila.'
+    },
+    {
+      id: 15,
+      title: 'Kolektor',
+      categories: ['Branding'],
+      description: 'Grafično oblikovanje strateških predstavitev podjetja Kolektor, ki zajemajo različne programe, veje in izdelke. Namen projekta je bil ustvariti pregledne, profesionalne in vizualno privlačne predstavitve, ki učinkovito komunicirajo vrednote in inovacije podjetja ter podpirajo poslovno strategijo.',
+      image: '/lovable-uploads/kolektor-1.png',
+      images: [
+        '/lovable-uploads/kolektor-1.png'
+      ],
+      technologies: ['Grafično oblikovanje'],
+      details: 'Grafično oblikovanje strateških predstavitev podjetja Kolektor, ki zajemajo različne programe, veje in izdelke. Namen projekta je bil ustvariti pregledne, profesionalne in vizualno privlačne predstavitve, ki učinkovito komunicirajo vrednote in inovacije podjetja ter podpirajo poslovno strategijo.'
     }
   ];
 
