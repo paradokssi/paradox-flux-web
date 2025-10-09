@@ -214,12 +214,12 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-25%);
+    transform: translateX(-50%);
   }
 }
 
 .animate-infinite-scroll {
-  animation: infinite-scroll 30s linear infinite;
+  animation: infinite-scroll 25s linear infinite;
 }
 
 /* Scrollbar styling */

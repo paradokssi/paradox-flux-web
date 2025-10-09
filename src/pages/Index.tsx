@@ -217,30 +217,48 @@ const Index = () => {
             <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-black to-transparent z-10"></div>
             
             <div className="overflow-hidden">
-              <div className="flex gap-4 animate-infinite-scroll">
-                {/* Create multiple duplicates for continuous seamless scrolling */}
-                {[1, 2, 3, 4].map((setNum) => (
-                  <div key={setNum} className="flex gap-4 shrink-0">
-                    {[
-                      '/lovable-uploads/clients/kolektor.png',
-                      '/lovable-uploads/clients/client-2.png',
-                      '/lovable-uploads/clients/client-3.png',
-                      '/lovable-uploads/clients/kosarkarsko-drustvo.png',
-                      '/lovable-uploads/clients/kovino.png',
-                      '/lovable-uploads/clients/client-6.png',
-                      '/lovable-uploads/clients/mama-moves.png',
-                      '/lovable-uploads/clients/client-8.png',
-                      '/lovable-uploads/clients/digit.png',
-                      '/lovable-uploads/clients/highlife.png',
-                    ].map((logo, index) => (
-                      <div key={`${setNum}-${index}`} className="flex items-center justify-center shrink-0 w-52">
-                        <img 
-                          src={logo} 
-                          alt={`Client logo ${index + 1}`}
-                          className="max-h-24 max-w-full w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
-                        />
-                      </div>
-                    ))}
+              <div className="flex animate-infinite-scroll">
+                {/* First set of logos */}
+                {[
+                  '/lovable-uploads/clients/kolektor.png',
+                  '/lovable-uploads/clients/client-2.png',
+                  '/lovable-uploads/clients/client-3.png',
+                  '/lovable-uploads/clients/kosarkarsko-drustvo.png',
+                  '/lovable-uploads/clients/kovino.png',
+                  '/lovable-uploads/clients/client-6.png',
+                  '/lovable-uploads/clients/mama-moves.png',
+                  '/lovable-uploads/clients/client-8.png',
+                  '/lovable-uploads/clients/digit.png',
+                  '/lovable-uploads/clients/highlife.png',
+                ].map((logo, index) => (
+                  <div key={index} className="flex items-center justify-center shrink-0 w-52 mx-2">
+                    <img 
+                      src={logo} 
+                      alt={`Client logo ${index + 1}`}
+                      className="max-h-24 max-w-full w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
+                    />
+                  </div>
+                ))}
+                
+                {/* Exact duplicate for seamless infinite loop */}
+                {[
+                  '/lovable-uploads/clients/kolektor.png',
+                  '/lovable-uploads/clients/client-2.png',
+                  '/lovable-uploads/clients/client-3.png',
+                  '/lovable-uploads/clients/kosarkarsko-drustvo.png',
+                  '/lovable-uploads/clients/kovino.png',
+                  '/lovable-uploads/clients/client-6.png',
+                  '/lovable-uploads/clients/mama-moves.png',
+                  '/lovable-uploads/clients/client-8.png',
+                  '/lovable-uploads/clients/digit.png',
+                  '/lovable-uploads/clients/highlife.png',
+                ].map((logo, index) => (
+                  <div key={`dup-${index}`} className="flex items-center justify-center shrink-0 w-52 mx-2">
+                    <img 
+                      src={logo} 
+                      alt={`Client logo ${index + 1}`}
+                      className="max-h-24 max-w-full w-auto object-contain opacity-60 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
+                    />
                   </div>
                 ))}
               </div>
