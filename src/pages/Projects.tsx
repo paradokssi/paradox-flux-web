@@ -98,6 +98,26 @@ const Projects = () => {
       ],
       technologies: ['Grafično oblikovanje', 'Spletna stran', 'Tiskovine', 'Promo materiali'],
       details: 'Za podjetje Šabec Transport smo ustvarili prepoznavno grafično podobo, sodobno spletno stran ter celovit nabor promocijskih materialov in tiskovin. Logotip združuje motiv ceste in črko Š, kar simbolizira povezanost, gibanje in zanesljivost. Vizualna identiteta temelji na modernem, minimalističnem pristopu, ki izraža dinamiko transportnih storitev in profesionalnost podjetja.'
+    },
+    {
+      id: 6,
+      title: 'Kovinoplastika',
+      category: 'Branding',
+      description: 'Za podjetje Kovinoplastika smo zasnovali celostno grafično podobo in sodobno spletno stran, dopolnjeno s promocijskimi materiali, tiskovinami ter prodajnimi predstavitvami in katalogom izdelkov.',
+      image: '/lovable-uploads/kp-1.png',
+      images: [
+        '/lovable-uploads/kp-1.png',
+        '/lovable-uploads/kp-2.png',
+        '/lovable-uploads/kp-3.png',
+        '/lovable-uploads/kp-4.png',
+        '/lovable-uploads/kp-5.png',
+        '/lovable-uploads/kp-6.png',
+        '/lovable-uploads/kp-7.png',
+        '/lovable-uploads/kp-7-1.png',
+        '/lovable-uploads/kp-8.png'
+      ],
+      technologies: ['Grafično oblikovanje', 'Spletna stran', 'Tiskovine', 'Foto in video produkcija', 'Studijska fotografija', 'Katalog izdelkov'],
+      details: 'Za podjetje Kovinoplastika smo zasnovali celostno grafično podobo in sodobno spletno stran, dopolnjeno s promocijskimi materiali, tiskovinami ter prodajnimi predstavitvami in katalogom izdelkov. Izvedli smo tudi studijsko fotografiranje ter foto in video produkcijo proizvodnega procesa, s čimer smo poudarili natančnost in kakovost izdelave. Vizualna identiteta temelji na modrih tonih in sivinah, ki izražajo tehnično zanesljivost, stabilnost in strokovnost podjetja.'
     }
   ];
 
