@@ -268,7 +268,7 @@ const Projects = () => {
       title: 'Lamborghini Revuelto',
       categories: ['Fotografija'],
       description: 'Fotografiranje športnega avtomobila Lamborghini Revuelto na lokaciji Malega Lošinja, z fokusom na eleganco in moč vozila.',
-      image: '/lovable-uploads/lambo-1.jpg',
+      image: '/lovable-uploads/lambo-5.jpg',
       images: [
         '/lovable-uploads/lambo-1.jpg',
         '/lovable-uploads/lambo-2.jpg',
