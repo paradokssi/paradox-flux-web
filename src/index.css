@@ -219,7 +219,7 @@
 }
 
 .animate-scroll-fast {
-  animation: scroll 15s linear infinite;
+  animation: scroll 2.5s linear infinite;
 }
 
 /* Scrollbar styling */
