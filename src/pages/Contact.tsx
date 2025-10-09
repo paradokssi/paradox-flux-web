@@ -81,7 +81,7 @@ const Contact = () => {
                 <textarea id="message" name="message" value={formData.message} onChange={handleChange} required rows={6} className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:border-electric-blue focus:outline-none focus:ring-2 focus:ring-electric-blue/20 transition-all resize-none" placeholder="Opišite svoj projekt ali potrebe..." />
               </div>
               
-              <button type="submit" className="w-full glass-blue py-4 rounded-lg font-semibold glow-blue-hover transition-all duration-300 hover:scale-105">
+              <button type="submit" className="w-full glass-purple py-4 rounded-lg font-semibold glow-purple-hover transition-all duration-300 hover:scale-105">
                 Povežimo se
               </button>
             </form>
