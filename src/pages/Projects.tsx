@@ -15,10 +15,16 @@ const Projects = () => {
       title: 'Glasbena šola Vili Marinšek',
       category: 'Branding',
       description: 'Za Glasbeno šolo Vili Marinšek je bila izvedena celostna prenova vizualne identitete, s ciljem osvežitve podobe in boljše komunikacije s ciljnimi skupinami. Projekt združuje klasično glasbeno estetiko s sodobnim, dostopnim oblikovanjem, primernim za mlade učence in starše.',
-      image: '/lovable-uploads/7627c78b-2a3b-4e3f-8877-d423e70877fa.png',
+      image: '/lovable-uploads/vm-1.png',
       images: [
-        '/lovable-uploads/7627c78b-2a3b-4e3f-8877-d423e70877fa.png',
-        '/lovable-uploads/4a3bf0ab-3136-4279-bbc6-c557a99b9976.png'
+        '/lovable-uploads/vm-1.png',
+        '/lovable-uploads/vm-2.png',
+        '/lovable-uploads/vm-3.png',
+        '/lovable-uploads/vm-4.png',
+        '/lovable-uploads/vm-5.png',
+        '/lovable-uploads/vm-6.png',
+        '/lovable-uploads/vm-7.png',
+        '/lovable-uploads/vm-8.png'
       ],
       technologies: ['Celostna grafična podoba', 'Oblikovanje logotipa', 'Spletna stran', 'Oblikovanje tiskovin', 'Vizualno svetovanje'],
       details: 'Za Glasbeno šolo Vili Marinšek je bila izvedena celostna prenova vizualne identitete, s ciljem osvežitve podobe in boljše komunikacije s ciljnimi skupinami. Projekt združuje klasično glasbeno estetiko s sodobnim, dostopnim oblikovanjem, primernim za mlade učence in starše. S prenovo je šola pridobila prepoznavno in profesionalno vizualno prisotnost tako v tisku kot na spletu.'
