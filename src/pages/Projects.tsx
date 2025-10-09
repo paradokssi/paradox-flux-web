@@ -201,6 +201,27 @@ const Projects = () => {
       ],
       technologies: ['Studijska fotografija', 'Urejanje fotografij', 'Vsebina za družbena omrežja'],
       details: 'Studijsko fotografiranje modela v vintage stilu, združenem z modernim pridihom. Fotografije izražajo preprostost, eleganco in toplino.'
+    },
+    {
+      id: 11,
+      title: 'Boudoir fotografiranje',
+      category: 'Fotografija',
+      description: 'Intimno boudoir fotografiranje, ki združuje čutnost in eleganco s prefinjenim stilom ter mehkimi svetlobnimi efekti.',
+      image: '/lovable-uploads/boudoir-1.jpg',
+      images: [
+        '/lovable-uploads/boudoir-1.jpg',
+        '/lovable-uploads/boudoir-2.jpg',
+        '/lovable-uploads/boudoir-3.jpg',
+        '/lovable-uploads/boudoir-4.jpg',
+        '/lovable-uploads/boudoir-5.jpg',
+        '/lovable-uploads/boudoir-6.jpg',
+        '/lovable-uploads/boudoir-7.jpg',
+        '/lovable-uploads/boudoir-8.jpg',
+        '/lovable-uploads/boudoir-9.jpg',
+        '/lovable-uploads/boudoir-10.jpg'
+      ],
+      technologies: ['Fotografija', 'Urejanje fotografij'],
+      details: 'Intimno boudoir fotografiranje, ki združuje čutnost in eleganco s prefinjenim stilom ter mehkimi svetlobnimi efekti.'
     }
   ];
 
