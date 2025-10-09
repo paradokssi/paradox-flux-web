@@ -262,6 +262,26 @@ const Projects = () => {
       ],
       technologies: ['Fotografija', 'Studijsko fotografiranje'],
       details: 'Fotografiranje klinike OrtoMG v njihovih prostorih za spletno stran in socialna omrežja, z fokusom na profesionalnost in prijazno vzdušje.'
+    },
+    {
+      id: 14,
+      title: 'Lamborghini Revuelto',
+      categories: ['Fotografija'],
+      description: 'Fotografiranje športnega avtomobila Lamborghini Revuelto na lokaciji Malega Lošinja, z fokusom na eleganco in moč vozila.',
+      image: '/lovable-uploads/lambo-1.jpg',
+      images: [
+        '/lovable-uploads/lambo-1.jpg',
+        '/lovable-uploads/lambo-2.jpg',
+        '/lovable-uploads/lambo-3.jpg',
+        '/lovable-uploads/lambo-4.jpg',
+        '/lovable-uploads/lambo-5.jpg',
+        '/lovable-uploads/lambo-6.jpg',
+        '/lovable-uploads/lambo-7.jpg',
+        '/lovable-uploads/lambo-8.jpg',
+        '/lovable-uploads/lambo-9.jpg'
+      ],
+      technologies: ['Outdoor fotografija', 'Avtomobilska fotografija'],
+      details: 'Fotografiranje športnega avtomobila Lamborghini Revuelto na lokaciji Malega Lošinja, z fokusom na eleganco in moč vozila.'
     }
   ];
 
