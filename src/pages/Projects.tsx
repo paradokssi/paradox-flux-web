@@ -137,6 +137,25 @@ const Projects = () => {
       ],
       technologies: ['Strategija blagovne znamke', 'Grafično oblikovanje', 'Oblikovanje dresov', 'Tiskovine', 'Organizacija dogodkov'],
       details: 'Za Košarkarsko društvo Postojna smo pripravili celovito strategijo prenove kluba, posodobili grafično podobo, oblikovali nove drese, tiskovine ter sodelovali pri organizaciji dogodkov. Osrednji element novega grba združuje človeško ribico – simbol podzemnega sveta Postojnske jame – in zmaja iz legende o pastirčku, ki predstavlja moč, pogum in vztrajnost. Ta spoj ustvarja edinstveno zgodbo kluba, ki temelji na lokalni identiteti in športnem duhu. Vizualna podoba ohranja izvorne barve kluba, medtem ko luske na dresih subtilno ponazarjajo zmajevo moč in zaščito.'
+    },
+    {
+      id: 8,
+      title: 'Vizion Investment',
+      category: 'Branding',
+      description: 'V sodelovanju z agencijo GREAT smo za podjetje Vizion Investment razvili novo grafično podobo, zasnovali promocijske materiale in oblikovali spletno stran, ki odraža eleganco in prestiž sveta investicij.',
+      image: '/lovable-uploads/vm-1.png',
+      images: [
+        '/lovable-uploads/vm-1.png',
+        '/lovable-uploads/vm-2.png',
+        '/lovable-uploads/vm-3.png',
+        '/lovable-uploads/vm-4.png',
+        '/lovable-uploads/vm-5.png',
+        '/lovable-uploads/vm-6.png',
+        '/lovable-uploads/vm-7.png',
+        '/lovable-uploads/vm-8.png'
+      ],
+      technologies: ['Grafično oblikovanje', 'Spletna stran', 'Promo materiali'],
+      details: 'V sodelovanju z agencijo GREAT smo za podjetje Vizion Investment razvili novo grafično podobo, zasnovali promocijske materiale in oblikovali spletno stran, ki odraža eleganco in prestiž sveta investicij. Glavni simbol znamke je ikona, ki združuje črko V in krila, kar ponazarja vizijo, rast in svobodo v investiranju. Barvna paleta temelji na zlatih tonih, ki simbolizirajo bogastvo, zaupanje in stabilnost — vrednote, povezane z investicijami v Dubaju in nepremičninskem sektorju.'
     }
   ];
 
