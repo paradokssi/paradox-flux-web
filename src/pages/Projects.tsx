@@ -383,7 +383,7 @@ const Projects = () => {
     {
       id: 22,
       title: 'Highlife Club – Instagram',
-      categories: ['Branding'],
+      categories: ['Branding', 'Social Media'],
       description: 'Oblikovanje vizualnih objav za Instagram profil Highlife Club, z namenom ustvariti privlačno in konsistentno grafično podobo profila.',
       image: '/lovable-uploads/highlife-1.png',
       images: [
