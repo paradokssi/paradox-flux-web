@@ -34,10 +34,15 @@ const Projects = () => {
       title: 'Nejc Velkavrh Produkcija',
       category: 'Branding',
       description: 'Za Nejc Velkavrh Produkcija sem pripravil celostno grafično podobo, ki odraža profesionalnost in kreativnost v svetu videoprodukcije. Vizualna identiteta temelji na sodobnem, čistem dizajnu z močnim poudarkom na osebni blagovni znamki.',
-      image: '/lovable-uploads/02f212e9-aecc-4bd4-8277-3f142561eccc.png',
+      image: '/lovable-uploads/nv-1.png',
       images: [
-        '/lovable-uploads/02f212e9-aecc-4bd4-8277-3f142561eccc.png',
-        '/lovable-uploads/5de6fbd3-c007-4b67-ba2d-7acf0b37f740.png'
+        '/lovable-uploads/nv-1.png',
+        '/lovable-uploads/nv-2.png',
+        '/lovable-uploads/nv-3.png',
+        '/lovable-uploads/nv-4.png',
+        '/lovable-uploads/nv-5.png',
+        '/lovable-uploads/nv-6.png',
+        '/lovable-uploads/nv-7.png'
       ],
       technologies: ['Celostna grafična podoba (CGP)', 'Oblikovanje logotipa', 'Spletna stran', 'Oblikovanje tiskovin', 'Vizualno svetovanje'],
       details: 'Za Nejc Velkavrh Produkcija sem pripravil celostno grafično podobo, ki odraža profesionalnost in kreativnost v svetu videoprodukcije. Vizualna identiteta temelji na sodobnem, čistem dizajnu z močnim poudarkom na osebni blagovni znamki. Projekt vključuje tudi oblikovanje in razvoj spletne strani, ki jasno predstavi storitve, projekte in kontaktne možnosti.'
