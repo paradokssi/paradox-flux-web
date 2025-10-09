@@ -74,6 +74,25 @@ const Projects = () => {
       ],
       technologies: ['Grafično oblikovanje', 'Strategija blagovne znamke'],
       details: 'Za blagovno znamko Gripsi smo zasnovali celostno grafično podobo in strategijo vizualne identitete. Ključni element logotipa je minimalistična ikona, ki združuje črko G in simbol neskončnosti – kar ponazarja neprekinjen razvoj, zanesljivost in inovativnost znamke. Celotna vizualna podoba je zasnovana v estetskem, prečiščenem in elegantnem slogu, ki izraža sodobnost in profesionalnost.'
+    },
+    {
+      id: 5,
+      title: 'Šabec Transport',
+      category: 'Branding',
+      description: 'Za podjetje Šabec Transport smo ustvarili prepoznavno grafično podobo, sodobno spletno stran ter celovit nabor promocijskih materialov in tiskovin. Logotip združuje motiv ceste in črko Š, kar simbolizira povezanost, gibanje in zanesljivost.',
+      image: '/lovable-uploads/st-1.png',
+      images: [
+        '/lovable-uploads/st-1.png',
+        '/lovable-uploads/st-2.png',
+        '/lovable-uploads/st-3.png',
+        '/lovable-uploads/st-4.png',
+        '/lovable-uploads/st-5.png',
+        '/lovable-uploads/st-6.png',
+        '/lovable-uploads/st-7.png',
+        '/lovable-uploads/st-8.png'
+      ],
+      technologies: ['Grafično oblikovanje', 'Spletna stran', 'Tiskovine', 'Promo materiali'],
+      details: 'Za podjetje Šabec Transport smo ustvarili prepoznavno grafično podobo, sodobno spletno stran ter celovit nabor promocijskih materialov in tiskovin. Logotip združuje motiv ceste in črko Š, kar simbolizira povezanost, gibanje in zanesljivost. Vizualna identiteta temelji na modernem, minimalističnem pristopu, ki izraža dinamiko transportnih storitev in profesionalnost podjetja.'
     }
   ];
 
