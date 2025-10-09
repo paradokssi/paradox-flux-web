@@ -57,6 +57,23 @@ const Projects = () => {
       ],
       technologies: ['Fotografiranje', 'Urejanje fotografij', 'Vsebina za spletno stran', 'Vsebina za družbena omrežja'],
       details: 'Za blagovno znamko Toper smo v sodelovanju z agencijo Great Agency izvedli lifestyle fotografiranje ob jezeru Jasna. Fotografirali smo dva modela v kolekciji oblačil Toper, z namenom ustvariti naravne, avtentične vizuale za spletno stran in družbena omrežja. Ambient gorskega jezera je dopolnil sproščeno, a vizualno močno zgodbo znamke.'
+    },
+    {
+      id: 4,
+      title: 'Gripsi',
+      category: 'Branding',
+      description: 'Za blagovno znamko Gripsi smo zasnovali celostno grafično podobo in strategijo vizualne identitete. Ključni element logotipa je minimalistična ikona, ki združuje črko G in simbol neskončnosti – kar ponazarja neprekinjen razvoj, zanesljivost in inovativnost znamke.',
+      image: '/lovable-uploads/gripsi-1.png',
+      images: [
+        '/lovable-uploads/gripsi-1.png',
+        '/lovable-uploads/gripsi-2.png',
+        '/lovable-uploads/gripsi-3.png',
+        '/lovable-uploads/gripsi-4.png',
+        '/lovable-uploads/gripsi-5.png',
+        '/lovable-uploads/gripsi-6.png'
+      ],
+      technologies: ['Grafično oblikovanje', 'Strategija blagovne znamke'],
+      details: 'Za blagovno znamko Gripsi smo zasnovali celostno grafično podobo in strategijo vizualne identitete. Ključni element logotipa je minimalistična ikona, ki združuje črko G in simbol neskončnosti – kar ponazarja neprekinjen razvoj, zanesljivost in inovativnost znamke. Celotna vizualna podoba je zasnovana v estetskem, prečiščenem in elegantnem slogu, ki izraža sodobnost in profesionalnost.'
     }
   ];
 
