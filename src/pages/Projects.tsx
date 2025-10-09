@@ -186,7 +186,7 @@ const Projects = () => {
       title: 'Marija',
       categories: ['Fotografija'],
       description: 'Studijsko fotografiranje modela v vintage stilu, združenem z modernim pridihom. Fotografije izražajo preprostost, eleganco in toplino.',
-      image: '/lovable-uploads/marija-1.jpg',
+      image: '/lovable-uploads/marija-10.jpg',
       images: [
         '/lovable-uploads/marija-1.jpg',
         '/lovable-uploads/marija-2.jpg',
