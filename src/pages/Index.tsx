@@ -205,6 +205,49 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Clients Section */}
+      <section className="relative py-20 px-4 overflow-hidden">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gradient">
+            Zaupali so nam
+          </h2>
+          
+          <div className="relative">
+            <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-black to-transparent z-10"></div>
+            <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-black to-transparent z-10"></div>
+            
+            <div className="overflow-hidden">
+              <div className="flex animate-scroll">
+                {[...Array(2)].map((_, setIndex) => (
+                  <div key={setIndex} className="flex shrink-0">
+                    {[
+                      '/lovable-uploads/client-logo-1.png',
+                      '/lovable-uploads/client-logo-2.png',
+                      '/lovable-uploads/client-logo-3.png',
+                      '/lovable-uploads/client-logo-4.png',
+                      '/lovable-uploads/client-logo-5.png',
+                      '/lovable-uploads/client-logo-6.png',
+                      '/lovable-uploads/client-logo-7.png',
+                      '/lovable-uploads/client-logo-8.png',
+                      '/lovable-uploads/client-logo-9.png',
+                      '/lovable-uploads/client-logo-10.png',
+                    ].map((logo, index) => (
+                      <div key={index} className="flex items-center justify-center px-8 shrink-0">
+                        <img 
+                          src={logo} 
+                          alt={`Client logo ${index + 1}`}
+                          className="h-16 md:h-20 w-auto opacity-50 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Stats Preview */}
       <section className="relative py-20 px-4 bg-white/5">
         <div className="max-w-4xl mx-auto text-center">
