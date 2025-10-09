@@ -471,6 +471,19 @@ const Projects = () => {
       ],
       technologies: ['Grafično oblikovanje', 'Banner design'],
       details: 'Izdelava prodajnih bannerjev za agencijo GREAT za podjetja kot so HOFER, Alpina, FitAkademija, Bestway, Toper, Elan, Vitapur in drugi. Bannerji so zasnovani na prodajnem nivoju, z močno vizualno privlačnostjo, jasnim sporočilom in strategijo, ki povečuje angažiranost ter zagotavlja visoko konverzijo.'
+    },
+    {
+      id: 28,
+      title: 'Mama Moves',
+      categories: ['Spletna stran'],
+      description: 'Za agencijo GREAT smo ustvarili UI in UX dizajn za prodajno spletno stran Mama Moves, optimizirano za visoke konverzije in prodajo. Dizajn vključuje prijazno navigacijo, pregledno strukturo vsebin in vizualne elemente, ki spodbujajo nakup ter angažiranost uporabnikov. Barvna paleta temelji na roza odtenkih, skladno z CGP, kar poudarja prepoznavnost blagovne znamke.',
+      image: '/lovable-uploads/mama-moves-1.png',
+      images: [
+        '/lovable-uploads/mama-moves-1.png',
+        '/lovable-uploads/mama-moves-2.png'
+      ],
+      technologies: ['Spletna stran', 'Grafično oblikovanje', 'UI/UX'],
+      details: 'Za agencijo GREAT smo ustvarili UI in UX dizajn za prodajno spletno stran Mama Moves, optimizirano za visoke konverzije in prodajo. Dizajn vključuje prijazno navigacijo, pregledno strukturo vsebin in vizualne elemente, ki spodbujajo nakup ter angažiranost uporabnikov. Barvna paleta temelji na roza odtenkih, skladno z CGP, kar poudarja prepoznavnost blagovne znamke.'
     }
   ];
 
