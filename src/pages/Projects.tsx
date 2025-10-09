@@ -143,16 +143,16 @@ const Projects = () => {
       title: 'Vizion Investment',
       category: 'Branding',
       description: 'V sodelovanju z agencijo GREAT smo za podjetje Vizion Investment razvili novo grafično podobo, zasnovali promocijske materiale in oblikovali spletno stran, ki odraža eleganco in prestiž sveta investicij.',
-      image: '/lovable-uploads/vm-1.png',
+      image: '/lovable-uploads/vizion-1.png',
       images: [
-        '/lovable-uploads/vm-1.png',
-        '/lovable-uploads/vm-2.png',
-        '/lovable-uploads/vm-3.png',
-        '/lovable-uploads/vm-4.png',
-        '/lovable-uploads/vm-5.png',
-        '/lovable-uploads/vm-6.png',
-        '/lovable-uploads/vm-7.png',
-        '/lovable-uploads/vm-8.png'
+        '/lovable-uploads/vizion-1.png',
+        '/lovable-uploads/vizion-2.png',
+        '/lovable-uploads/vizion-3.png',
+        '/lovable-uploads/vizion-4.png',
+        '/lovable-uploads/vizion-5.png',
+        '/lovable-uploads/vizion-6.png',
+        '/lovable-uploads/vizion-7.png',
+        '/lovable-uploads/vizion-8.png'
       ],
       technologies: ['Grafično oblikovanje', 'Spletna stran', 'Promo materiali'],
       details: 'V sodelovanju z agencijo GREAT smo za podjetje Vizion Investment razvili novo grafično podobo, zasnovali promocijske materiale in oblikovali spletno stran, ki odraža eleganco in prestiž sveta investicij. Glavni simbol znamke je ikona, ki združuje črko V in krila, kar ponazarja vizijo, rast in svobodo v investiranju. Barvna paleta temelji na zlatih tonih, ki simbolizirajo bogastvo, zaupanje in stabilnost — vrednote, povezane z investicijami v Dubaju in nepremičninskem sektorju.'
