@@ -82,27 +82,37 @@ const Index = () => {
     }}></div>
       
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-4">
-        <div className={`text-center space-y-8 ${isVisible ? 'animate-slide-up' : 'opacity-0'}`}>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight">
-            <span className="text-gradient"></span>
-            <br />
-            <span className="text-white">Oblikujemo prihodnost </span>
-            <br />
-            <span className="galactic-purple">vaše blagovne znamke</span>
-          </h1>
+      <section className="relative min-h-screen flex items-center px-4">
+        <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
+          <div className={`space-y-8 ${isVisible ? 'animate-slide-up' : 'opacity-0'}`}>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight">
+              <span className="text-gradient"></span>
+              <br />
+              <span className="text-white">Oblikujemo prihodnost </span>
+              <br />
+              <span className="galactic-purple">vaše blagovne znamke</span>
+            </h1>
+            
+            <p className="text-xl md:text-2xl text-white/80">
+              Združujemo estetiko, tehnologijo in učinkovitost.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-6 mt-12">
+              <Link to="/contact" className="bg-galactic-purple px-8 py-4 rounded-full text-white font-semibold glow-purple-hover transition-all duration-300 hover:scale-105">
+                Stopi v stik
+              </Link>
+              <Link to="/projects" className="glass border border-white/20 px-8 py-4 rounded-full text-white font-semibold hover:border-galactic-purple transition-all duration-300 hover:scale-105">
+                Oglej si projekte
+              </Link>
+            </div>
+          </div>
           
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto text-white/80">
-            Združujemo estetiko, tehnologijo in učinkovitost.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-6 justify-center mt-12">
-            <Link to="/contact" className="bg-galactic-purple px-8 py-4 rounded-full text-white font-semibold glow-purple-hover transition-all duration-300 hover:scale-105">
-              Stopi v stik
-            </Link>
-            <Link to="/projects" className="glass border border-white/20 px-8 py-4 rounded-full text-white font-semibold hover:border-galactic-purple transition-all duration-300 hover:scale-105">
-              Oglej si projekte
-            </Link>
+          <div className="hidden lg:block">
+            <img 
+              src="/lovable-uploads/hero-image.png" 
+              alt="Galactic spiral" 
+              className="w-full h-auto"
+            />
           </div>
         </div>
         
