@@ -3,44 +3,36 @@ import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { Users, Target, Rocket, Camera, Palette, Video, Bot, TrendingUp, Home, User, FolderOpen, Settings, Mail } from 'lucide-react';
-
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
-
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
-  const features = [
-    {
-      title: 'O nas',
-      description: 'Spoznajte našo filozofijo in dosežke',
-      path: '/about',
-      gradient: 'from-white/10 to-purple-500/20',
-      icon: User
-    },
-    {
-      title: 'Projekti',
-      description: 'Odkrijte naša najnovejša dela',
-      path: '/projects',
-      gradient: 'from-purple-500/20 to-white/10',
-      icon: FolderOpen
-    },
-    {
-      title: 'Storitve',
-      description: 'Celovite digitalne rešitve',
-      path: '/services',
-      gradient: 'from-white/10 to-purple-500/20',
-      icon: Settings
-    },
-    {
-      title: 'Stopi v stik',
-      description: 'Povežimo se in ustvarimo skupaj',
-      path: '/contact',
-      gradient: 'from-purple-500/20 to-white/10',
-      icon: Mail
-    }
-  ];
+  const features = [{
+    title: 'O nas',
+    description: 'Spoznajte našo filozofijo in dosežke',
+    path: '/about',
+    gradient: 'from-white/10 to-purple-500/20',
+    icon: User
+  }, {
+    title: 'Projekti',
+    description: 'Odkrijte naša najnovejša dela',
+    path: '/projects',
+    gradient: 'from-purple-500/20 to-white/10',
+    icon: FolderOpen
+  }, {
+    title: 'Storitve',
+    description: 'Celovite digitalne rešitve',
+    path: '/services',
+    gradient: 'from-white/10 to-purple-500/20',
+    icon: Settings
+  }, {
+    title: 'Stopi v stik',
+    description: 'Povežimo se in ustvarimo skupaj',
+    path: '/contact',
+    gradient: 'from-purple-500/20 to-white/10',
+    icon: Mail
+  }];
   const services = [{
     icon: Target,
     title: 'Spletne strani',
@@ -66,33 +58,28 @@ const Index = () => {
     title: 'Poslovno svetovanje',
     desc: 'Digitalna preobrazba'
   }];
-  const projects = [
-    {
-      title: 'Glasbena šola Vili Marinšek',
-      category: 'Branding',
-      image: '/lovable-uploads/7627c78b-2a3b-4e3f-8877-d423e70877fa.png'
-    },
-    {
-      title: 'Nejc Velkavrh Produkcija',
-      category: 'Branding',
-      image: '/lovable-uploads/02f212e9-aecc-4bd4-8277-3f142561eccc.png'
-    },
-    {
-      title: 'Toper – Lifestyle fotografiranje',
-      category: 'Fotografija',
-      image: '/lovable-uploads/c4ce2d6e-50c2-4fab-a65e-487f54529cb6.png'
-    }
-  ];
-  return (
-    <div className="min-h-screen relative overflow-hidden bg-black text-white">
+  const projects = [{
+    title: 'Glasbena šola Vili Marinšek',
+    category: 'Branding',
+    image: '/lovable-uploads/7627c78b-2a3b-4e3f-8877-d423e70877fa.png'
+  }, {
+    title: 'Nejc Velkavrh Produkcija',
+    category: 'Branding',
+    image: '/lovable-uploads/02f212e9-aecc-4bd4-8277-3f142561eccc.png'
+  }, {
+    title: 'Toper – Lifestyle fotografiranje',
+    category: 'Fotografija',
+    image: '/lovable-uploads/c4ce2d6e-50c2-4fab-a65e-487f54529cb6.png'
+  }];
+  return <div className="min-h-screen relative overflow-hidden bg-black text-white">
       <Navigation />
       
       {/* Background Elements */}
       <div className="fixed inset-0 bg-gradient-radial opacity-50"></div>
       <div className="fixed top-1/4 left-1/4 w-96 h-96 bg-galactic-purple/10 rounded-full blur-3xl animate-float"></div>
       <div className="fixed bottom-1/4 right-1/4 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-float" style={{
-        animationDelay: '2s'
-      }}></div>
+      animationDelay: '2s'
+    }}></div>
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-4">
@@ -100,9 +87,9 @@ const Index = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight">
             <span className="text-gradient"></span>
             <br />
-            <span className="text-white">Digitalna agencija</span>
+            <span className="text-white">Oblikujemo prihodnost vaše blagovne znamke.</span>
             <br />
-            <span className="galactic-purple">prihodnosti</span>
+            <span className="galactic-purple">vaše blagovne znamke.</span>
           </h1>
           
           <p className="text-xl md:text-2xl max-w-3xl mx-auto text-white/80">
@@ -135,13 +122,9 @@ const Index = () => {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {features.map((feature, index) => (
-              <Link
-                key={feature.path}
-                to={feature.path}
-                className="group glass rounded-2xl p-8 hover:glow-purple transition-all duration-500 hover:scale-105 text-center"
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
+            {features.map((feature, index) => <Link key={feature.path} to={feature.path} className="group glass rounded-2xl p-8 hover:glow-purple transition-all duration-500 hover:scale-105 text-center" style={{
+            animationDelay: `${index * 0.2}s`
+          }}>
                 <div className="mb-6 flex justify-center">
                   <div className="relative">
                     <div className="absolute inset-0 bg-galactic-purple/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-300"></div>
@@ -154,8 +137,7 @@ const Index = () => {
                 <p className="text-white/70 group-hover:text-white/90 transition-colors text-sm leading-relaxed">
                   {feature.description}
                 </p>
-              </Link>
-            ))}
+              </Link>)}
           </div>
         </div>
       </section>
@@ -171,10 +153,9 @@ const Index = () => {
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div key={service.title} className="glass-purple rounded-xl p-6 group hover:glow-purple transition-all duration-300" style={{
-                animationDelay: `${index * 0.1}s`
-              }}>
+            {services.map((service, index) => <div key={service.title} className="glass-purple rounded-xl p-6 group hover:glow-purple transition-all duration-300" style={{
+            animationDelay: `${index * 0.1}s`
+          }}>
                 <service.icon className="w-8 h-8 galactic-purple mb-4 group-hover:scale-110 transition-transform" />
                 <h3 className="text-lg font-semibold mb-2 text-white group-hover:galactic-purple transition-colors">
                   {service.title}
@@ -182,8 +163,7 @@ const Index = () => {
                 <p className="text-white/70">
                   {service.desc}
                 </p>
-              </div>
-            ))}
+              </div>)}
           </div>
           
           <div className="text-center mt-12">
@@ -205,22 +185,16 @@ const Index = () => {
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <div key={project.title} className="glass rounded-xl overflow-hidden group hover:glow-purple transition-all duration-500 hover:scale-105">
+            {projects.map((project, index) => <div key={project.title} className="glass rounded-xl overflow-hidden group hover:glow-purple transition-all duration-500 hover:scale-105">
                 <div className="h-48 relative overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
+                  <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
                 </div>
                 <div className="p-6">
                   <div className="text-sm galactic-purple mb-2">{project.category}</div>
                   <h3 className="text-lg font-semibold text-white">{project.title}</h3>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
           
           <div className="text-center mt-12">
@@ -240,36 +214,32 @@ const Index = () => {
           
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[{
-              number: '120+',
-              label: 'Projektov'
-            }, {
-              number: '80+',
-              label: 'Zadovoljnih strank'
-            }, {
-              number: '15+',
-              label: 'Let izkušenj'
-            }, {
-              number: '99%',
-              label: 'Zadovoljstvo'
-            }].map((stat, index) => (
-              <div key={index} className="glass-purple rounded-xl p-6 animate-scale-up" style={{
-                animationDelay: `${index * 0.1}s`
-              }}>
+            number: '120+',
+            label: 'Projektov'
+          }, {
+            number: '80+',
+            label: 'Zadovoljnih strank'
+          }, {
+            number: '15+',
+            label: 'Let izkušenj'
+          }, {
+            number: '99%',
+            label: 'Zadovoljstvo'
+          }].map((stat, index) => <div key={index} className="glass-purple rounded-xl p-6 animate-scale-up" style={{
+            animationDelay: `${index * 0.1}s`
+          }}>
                 <div className="text-3xl md:text-4xl font-bold galactic-purple mb-2">
                   {stat.number}
                 </div>
                 <div className="text-white/80">
                   {stat.label}
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
