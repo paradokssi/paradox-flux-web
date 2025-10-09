@@ -396,6 +396,18 @@ const Projects = () => {
       ],
       technologies: ['Grafično oblikovanje', 'Social media design'],
       details: 'Oblikovanje vizualnih objav za Instagram profil Highlife Club, z namenom ustvariti privlačno in konsistentno grafično podobo profila.'
+    },
+    {
+      id: 23,
+      title: 'ASTECH',
+      categories: ['Branding'],
+      description: 'Oblikovanje jumbo plakata, ki združuje jasen vizual in močno sporočilo za učinkovito promocijo blagovne znamke ASTECH.',
+      image: '/lovable-uploads/astech-1.png',
+      images: [
+        '/lovable-uploads/astech-1.png'
+      ],
+      technologies: ['Grafično oblikovanje', 'Tiskovine'],
+      details: 'Oblikovanje jumbo plakata, ki združuje jasen vizual in močno sporočilo za učinkovito promocijo blagovne znamke ASTECH.'
     }
   ];
 
