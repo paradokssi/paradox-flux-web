@@ -207,7 +207,7 @@ const Projects = () => {
       title: 'Boudoir fotografiranje',
       categories: ['Fotografija'],
       description: 'Intimno boudoir fotografiranje, ki združuje čutnost in eleganco s prefinjenim stilom ter mehkimi svetlobnimi efekti.',
-      image: '/lovable-uploads/boudoir-1.jpg',
+      image: '/lovable-uploads/boudoir-2.jpg',
       images: [
         '/lovable-uploads/boudoir-1.jpg',
         '/lovable-uploads/boudoir-2.jpg',
