@@ -171,7 +171,7 @@ const Contact = () => {
                 {[
                   { icon: '⚡', text: 'Hitro odzivanje' },
                   { icon: '🎯', text: 'Individualni pristop' },
-                  { icon: '💎', text: 'Kakovost nad všim' },
+                  { icon: '💎', text: 'Kakovost nad vsem' },
                   { icon: '🤝', text: 'Dolgoročno partnerstvo' }
                 ].map((item, index) => (
                   <div key={index} className="flex items-center space-x-3">
