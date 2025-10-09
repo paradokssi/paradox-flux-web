@@ -209,17 +209,17 @@
   100% { transform: translateX(100%); }
 }
 
-@keyframes scroll {
+@keyframes scroll-seamless {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-100% / 6));
+    transform: translateX(-50%);
   }
 }
 
-.animate-scroll-fast {
-  animation: scroll 3s linear infinite;
+.animate-scroll-seamless {
+  animation: scroll-seamless 15s linear infinite;
 }
 
 /* Scrollbar styling */
