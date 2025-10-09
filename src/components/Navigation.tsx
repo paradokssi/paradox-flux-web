@@ -14,8 +14,8 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 glass border-b border-white/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-7xl">
+      <div className="glass border border-white/10 rounded-full px-6 sm:px-8 lg:px-10 shadow-lg">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
             <img 
