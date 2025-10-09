@@ -87,9 +87,9 @@ const Index = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight">
             <span className="text-gradient"></span>
             <br />
-            <span className="text-white">Oblikujemo prihodnost vaše blagovne znamke.</span>
+            <span className="text-white">Oblikujemo prihodnost </span>
             <br />
-            <span className="galactic-purple">vaše blagovne znamke.</span>
+            <span className="galactic-purple">vaše blagovne znamke</span>
           </h1>
           
           <p className="text-xl md:text-2xl max-w-3xl mx-auto text-white/80">
