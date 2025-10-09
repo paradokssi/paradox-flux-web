@@ -288,11 +288,11 @@ const Projects = () => {
                 style={{ animationDelay: `${index * 0.2}s` }}
                 onClick={() => setSelectedProject(project.id)}
               >
-                <div className="relative overflow-hidden">
+                <div className="relative overflow-hidden aspect-square">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-all duration-300"></div>
                   <div className="absolute top-4 right-4 flex gap-2">
