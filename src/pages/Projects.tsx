@@ -401,13 +401,13 @@ const Projects = () => {
       id: 23,
       title: 'ASTECH',
       categories: ['Branding'],
-      description: 'Oblikovanje jumbo plakata, ki združuje jasen vizual in močno sporočilo za učinkovito promocijo blagovne znamke ASTECH.',
+      description: 'Oblikovanje jumbo plakata za Agencijo GO4 Digit, ki združuje jasen vizual in močno sporočilo za učinkovito promocijo blagovne znamke ASTECH.',
       image: '/lovable-uploads/astech-1.png',
       images: [
         '/lovable-uploads/astech-1.png'
       ],
       technologies: ['Grafično oblikovanje', 'Tiskovine'],
-      details: 'Oblikovanje jumbo plakata, ki združuje jasen vizual in močno sporočilo za učinkovito promocijo blagovne znamke ASTECH.'
+      details: 'Oblikovanje jumbo plakata za Agencijo GO4 Digit, ki združuje jasen vizual in močno sporočilo za učinkovito promocijo blagovne znamke ASTECH.'
     }
   ];
 
