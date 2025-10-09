@@ -1,15 +1,37 @@
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../components/ui/carousel';
 import { Button } from '../components/ui/button';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
   const [selectedFilter, setSelectedFilter] = useState<string>('Vse');
+  const [sortBy, setSortBy] = useState<string>('priporoceno');
 
   const projects = [
+    {
+      id: 14,
+      title: 'Lamborghini Revuelto',
+      categories: ['Fotografija'],
+      description: 'Fotografiranje športnega avtomobila Lamborghini Revuelto na lokaciji Malega Lošinja, z fokusom na eleganco in moč vozila.',
+      image: '/lovable-uploads/lambo-5.jpg',
+      images: [
+        '/lovable-uploads/lambo-1.jpg',
+        '/lovable-uploads/lambo-2.jpg',
+        '/lovable-uploads/lambo-3.jpg',
+        '/lovable-uploads/lambo-4.jpg',
+        '/lovable-uploads/lambo-5.jpg',
+        '/lovable-uploads/lambo-6.jpg',
+        '/lovable-uploads/lambo-7.jpg',
+        '/lovable-uploads/lambo-8.jpg',
+        '/lovable-uploads/lambo-9.jpg'
+      ],
+      technologies: ['Outdoor fotografija', 'Avtomobilska fotografija'],
+      details: 'Fotografiranje športnega avtomobila Lamborghini Revuelto na lokaciji Malega Lošinja, z fokusom na eleganco in moč vozila.'
+    },
     {
       id: 1,
       title: 'Glasbena šola Vili Marinšek',
@@ -48,6 +70,19 @@ const Projects = () => {
       details: 'Za Nejc Velkavrh Produkcija sem pripravil celostno grafično podobo, ki odraža profesionalnost in kreativnost v svetu videoprodukcije. Vizualna identiteta temelji na sodobnem, čistem dizajnu z močnim poudarkom na osebni blagovni znamki. Projekt vključuje tudi oblikovanje in razvoj spletne strani, ki jasno predstavi storitve, projekte in kontaktne možnosti.'
     },
     {
+      id: 28,
+      title: 'Mama Moves',
+      categories: ['Spletna stran'],
+      description: 'Za agencijo GREAT smo ustvarili UI in UX dizajn za prodajno spletno stran Mama Moves, optimizirano za visoke konverzije in prodajo. Dizajn vključuje prijazno navigacijo, pregledno strukturo vsebin in vizualne elemente, ki spodbujajo nakup ter angažiranost uporabnikov. Barvna paleta temelji na roza odtenkih, skladno z CGP, kar poudarja prepoznavnost blagovne znamke.',
+      image: '/lovable-uploads/mama-moves-1.png',
+      images: [
+        '/lovable-uploads/mama-moves-1.png',
+        '/lovable-uploads/mama-moves-2.png'
+      ],
+      technologies: ['Spletna stran', 'Grafično oblikovanje', 'UI/UX'],
+      details: 'Za agencijo GREAT smo ustvarili UI in UX dizajn za prodajno spletno stran Mama Moves, optimizirano za visoke konverzije in prodajo. Dizajn vključuje prijazno navigacijo, pregledno strukturo vsebin in vizualne elemente, ki spodbujajo nakup ter angažiranost uporabnikov. Barvna paleta temelji na roza odtenkih, skladno z CGP, kar poudarja prepoznavnost blagovne znamke.'
+    },
+    {
       id: 3,
       title: 'Toper – Lifestyle fotografiranje',
       categories: ['Fotografija'],
@@ -69,6 +104,25 @@ const Projects = () => {
       details: 'Za blagovno znamko Toper smo v sodelovanju z agencijo Great Agency izvedli lifestyle fotografiranje ob jezeru Jasna. Fotografirali smo dva modela v kolekciji oblačil Toper, z namenom ustvariti naravne, avtentične vizuale za spletno stran in družbena omrežja. Ambient gorskega jezera je dopolnil sproščeno, a vizualno močno zgodbo znamke.'
     },
     {
+      id: 8,
+      title: 'Vizion Investment',
+      categories: ['Branding', 'Spletna stran'],
+      description: 'V sodelovanju z agencijo GREAT smo za podjetje Vizion Investment razvili novo grafično podobo, zasnovali promocijske materiale in oblikovali spletno stran, ki odraža eleganco in prestiž sveta investicij.',
+      image: '/lovable-uploads/vizion-1.png',
+      images: [
+        '/lovable-uploads/vizion-1.png',
+        '/lovable-uploads/vizion-2.png',
+        '/lovable-uploads/vizion-3.png',
+        '/lovable-uploads/vizion-4.png',
+        '/lovable-uploads/vizion-5.png',
+        '/lovable-uploads/vizion-6.png',
+        '/lovable-uploads/vizion-7.png',
+        '/lovable-uploads/vizion-8.png'
+      ],
+      technologies: ['Grafično oblikovanje', 'Spletna stran', 'Promo materiali'],
+      details: 'V sodelovanju z agencijo GREAT smo za podjetje Vizion Investment razvili novo grafično podobo, zasnovali promocijske materiale in oblikovali spletno stran, ki odraža eleganco in prestiž sveta investicij. Glavni simbol znamke je ikona, ki združuje črko V in krila, kar ponazarja vizijo, rast in svobodo v investiranju. Barvna paleta temelji na zlatih tonih, ki simbolizirajo bogastvo, zaupanje in stabilnost — vrednote, povezane z investicijami v Dubaju in nepremičninskem sektorju.'
+    },
+    {
       id: 4,
       title: 'Gripsi',
       categories: ['Branding'],
@@ -84,6 +138,27 @@ const Projects = () => {
       ],
       technologies: ['Grafično oblikovanje', 'Strategija blagovne znamke'],
       details: 'Za blagovno znamko Gripsi smo zasnovali celostno grafično podobo in strategijo vizualne identitete. Ključni element logotipa je minimalistična ikona, ki združuje črko G in simbol neskončnosti – kar ponazarja neprekinjen razvoj, zanesljivost in inovativnost znamke. Celotna vizualna podoba je zasnovana v estetskem, prečiščenem in elegantnem slogu, ki izraža sodobnost in profesionalnost.'
+    },
+    {
+      id: 11,
+      title: 'Boudoir fotografiranje',
+      categories: ['Fotografija'],
+      description: 'Intimno boudoir fotografiranje, ki združuje čutnost in eleganco s prefinjenim stilom ter mehkimi svetlobnimi efekti.',
+      image: '/lovable-uploads/boudoir-2.jpg',
+      images: [
+        '/lovable-uploads/boudoir-1.jpg',
+        '/lovable-uploads/boudoir-2.jpg',
+        '/lovable-uploads/boudoir-3.jpg',
+        '/lovable-uploads/boudoir-4.jpg',
+        '/lovable-uploads/boudoir-5.jpg',
+        '/lovable-uploads/boudoir-6.jpg',
+        '/lovable-uploads/boudoir-7.jpg',
+        '/lovable-uploads/boudoir-8.jpg',
+        '/lovable-uploads/boudoir-9.jpg',
+        '/lovable-uploads/boudoir-10.jpg'
+      ],
+      technologies: ['Fotografija', 'Urejanje fotografij'],
+      details: 'Intimno boudoir fotografiranje, ki združuje čutnost in eleganco s prefinjenim stilom ter mehkimi svetlobnimi efekti.'
     },
     {
       id: 5,
@@ -103,6 +178,23 @@ const Projects = () => {
       ],
       technologies: ['Grafično oblikovanje', 'Spletna stran', 'Tiskovine', 'Promo materiali'],
       details: 'Za podjetje Šabec Transport smo ustvarili prepoznavno grafično podobo, sodobno spletno stran ter celovit nabor promocijskih materialov in tiskovin. Logotip združuje motiv ceste in črko Š, kar simbolizira povezanost, gibanje in zanesljivost. Vizualna identiteta temelji na modernem, minimalističnem pristopu, ki izraža dinamiko transportnih storitev in profesionalnost podjetja.'
+    },
+    {
+      id: 24,
+      title: 'NU Rally',
+      categories: ['Social Media', 'Branding'],
+      description: 'Oblikovanje objav za Instagram profil ameriškega kluba športnih in luksuznih avtomobilov NU Rally, z namenom ustvariti privlačno in prepoznavno vizualno podobo.',
+      image: '/lovable-uploads/nu-rally-1.png',
+      images: [
+        '/lovable-uploads/nu-rally-1.png',
+        '/lovable-uploads/nu-rally-2.png',
+        '/lovable-uploads/nu-rally-3.png',
+        '/lovable-uploads/nu-rally-4.png',
+        '/lovable-uploads/nu-rally-5.png',
+        '/lovable-uploads/nu-rally-6.png'
+      ],
+      technologies: ['Grafično oblikovanje', 'Social media design'],
+      details: 'Oblikovanje objav za Instagram profil ameriškega kluba športnih in luksuznih avtomobilov NU Rally, z namenom ustvariti privlačno in prepoznavno vizualno podobo.'
     },
     {
       id: 6,
@@ -128,6 +220,19 @@ const Projects = () => {
       details: 'Za podjetje Kovinoplastika smo zasnovali celostno grafično podobo in sodobno spletno stran, dopolnjeno s promocijskimi materiali, tiskovinami ter prodajnimi predstavitvami in katalogom izdelkov. Izvedli smo tudi studijsko fotografiranje ter foto in video produkcijo proizvodnega procesa, s čimer smo poudarili natančnost in kakovost izdelave. Vizualna identiteta temelji na modrih tonih in sivinah, ki izražajo tehnično zanesljivost, stabilnost in strokovnost podjetja.'
     },
     {
+      id: 27,
+      title: 'Prodajni Banner Oglasi',
+      categories: ['Branding', 'Social Media'],
+      description: 'Izdelava prodajnih bannerjev za agencijo GREAT za podjetja kot so HOFER, Alpina, FitAkademija, Bestway, Toper, Elan, Vitapur in drugi. Bannerji so zasnovani na prodajnem nivoju, z močno vizualno privlačnostjo, jasnim sporočilom in strategijo, ki povečuje angažiranost ter zagotavlja visoko konverzijo.',
+      image: '/lovable-uploads/ads-1.png',
+      images: [
+        '/lovable-uploads/ads-1.png',
+        '/lovable-uploads/ads-2.png'
+      ],
+      technologies: ['Grafično oblikovanje', 'Banner design'],
+      details: 'Izdelava prodajnih bannerjev za agencijo GREAT za podjetja kot so HOFER, Alpina, FitAkademija, Bestway, Toper, Elan, Vitapur in drugi. Bannerji so zasnovani na prodajnem nivoju, z močno vizualno privlačnostjo, jasnim sporočilom in strategijo, ki povečuje angažiranost ter zagotavlja visoko konverzijo.'
+    },
+    {
       id: 7,
       title: 'Košarkarsko društvo Postojna',
       categories: ['Branding'],
@@ -145,83 +250,6 @@ const Projects = () => {
       ],
       technologies: ['Strategija blagovne znamke', 'Grafično oblikovanje', 'Oblikovanje dresov', 'Tiskovine', 'Organizacija dogodkov'],
       details: 'Za Košarkarsko društvo Postojna smo pripravili celovito strategijo prenove kluba, posodobili grafično podobo, oblikovali nove drese, tiskovine ter sodelovali pri organizaciji dogodkov. Osrednji element novega grba združuje človeško ribico – simbol podzemnega sveta Postojnske jame – in zmaja iz legende o pastirčku, ki predstavlja moč, pogum in vztrajnost. Ta spoj ustvarja edinstveno zgodbo kluba, ki temelji na lokalni identiteti in športnem duhu. Vizualna podoba ohranja izvorne barve kluba, medtem ko luske na dresih subtilno ponazarjajo zmajevo moč in zaščito.'
-    },
-    {
-      id: 8,
-      title: 'Vizion Investment',
-      categories: ['Branding', 'Spletna stran'],
-      description: 'V sodelovanju z agencijo GREAT smo za podjetje Vizion Investment razvili novo grafično podobo, zasnovali promocijske materiale in oblikovali spletno stran, ki odraža eleganco in prestiž sveta investicij.',
-      image: '/lovable-uploads/vizion-1.png',
-      images: [
-        '/lovable-uploads/vizion-1.png',
-        '/lovable-uploads/vizion-2.png',
-        '/lovable-uploads/vizion-3.png',
-        '/lovable-uploads/vizion-4.png',
-        '/lovable-uploads/vizion-5.png',
-        '/lovable-uploads/vizion-6.png',
-        '/lovable-uploads/vizion-7.png',
-        '/lovable-uploads/vizion-8.png'
-      ],
-      technologies: ['Grafično oblikovanje', 'Spletna stran', 'Promo materiali'],
-      details: 'V sodelovanju z agencijo GREAT smo za podjetje Vizion Investment razvili novo grafično podobo, zasnovali promocijske materiale in oblikovali spletno stran, ki odraža eleganco in prestiž sveta investicij. Glavni simbol znamke je ikona, ki združuje črko V in krila, kar ponazarja vizijo, rast in svobodo v investiranju. Barvna paleta temelji na zlatih tonih, ki simbolizirajo bogastvo, zaupanje in stabilnost — vrednote, povezane z investicijami v Dubaju in nepremičninskem sektorju.'
-    },
-    {
-      id: 9,
-      title: 'Ansambel Obisk',
-      categories: ['Branding'],
-      description: 'Za Ansambel Obisk smo oblikovali novo grafično podobo in pripravili tiskovine, ki poudarjajo prepoznavnost in glasbeni značaj skupine.',
-      image: '/lovable-uploads/obisk-1.png',
-      images: [
-        '/lovable-uploads/obisk-1.png',
-        '/lovable-uploads/obisk-2.png',
-        '/lovable-uploads/obisk-3.png',
-        '/lovable-uploads/obisk-4.png',
-        '/lovable-uploads/obisk-5.png'
-      ],
-      technologies: ['Grafično oblikovanje', 'Tiskovine'],
-      details: 'Za Ansambel Obisk smo oblikovali novo grafično podobo in pripravili tiskovine, ki poudarjajo prepoznavnost in glasbeni značaj skupine. Glavni element logotipa je črka O, združena z glasbeno noto, kar simbolizira povezanost med identiteto ansambla in njegovo glasbo. Barvna paleta temelji na rdečih odtenkih, značilnih za oberkrainerski slog, ki izražajo energijo, tradicijo in veselje do glasbe.'
-    },
-    {
-      id: 10,
-      title: 'Marija',
-      categories: ['Fotografija'],
-      description: 'Studijsko fotografiranje modela v vintage stilu, združenem z modernim pridihom. Fotografije izražajo preprostost, eleganco in toplino.',
-      image: '/lovable-uploads/marija-10.jpg',
-      images: [
-        '/lovable-uploads/marija-1.jpg',
-        '/lovable-uploads/marija-2.jpg',
-        '/lovable-uploads/marija-3.jpg',
-        '/lovable-uploads/marija-4.jpg',
-        '/lovable-uploads/marija-5.jpg',
-        '/lovable-uploads/marija-6.jpg',
-        '/lovable-uploads/marija-7.jpg',
-        '/lovable-uploads/marija-8.jpg',
-        '/lovable-uploads/marija-9.jpg',
-        '/lovable-uploads/marija-10.jpg'
-      ],
-      technologies: ['Studijska fotografija', 'Urejanje fotografij', 'Vsebina za družbena omrežja'],
-      details: 'Studijsko fotografiranje modela v vintage stilu, združenem z modernim pridihom. Fotografije izražajo preprostost, eleganco in toplino.'
-    },
-    {
-      id: 11,
-      title: 'Boudoir fotografiranje',
-      categories: ['Fotografija'],
-      description: 'Intimno boudoir fotografiranje, ki združuje čutnost in eleganco s prefinjenim stilom ter mehkimi svetlobnimi efekti.',
-      image: '/lovable-uploads/boudoir-2.jpg',
-      images: [
-        '/lovable-uploads/boudoir-1.jpg',
-        '/lovable-uploads/boudoir-2.jpg',
-        '/lovable-uploads/boudoir-3.jpg',
-        '/lovable-uploads/boudoir-4.jpg',
-        '/lovable-uploads/boudoir-5.jpg',
-        '/lovable-uploads/boudoir-6.jpg',
-        '/lovable-uploads/boudoir-7.jpg',
-        '/lovable-uploads/boudoir-8.jpg',
-        '/lovable-uploads/boudoir-9.jpg',
-        '/lovable-uploads/boudoir-10.jpg'
-      ],
-      technologies: ['Fotografija', 'Urejanje fotografij'],
-      details: 'Intimno boudoir fotografiranje, ki združuje čutnost in eleganco s prefinjenim stilom ter mehkimi svetlobnimi efekti.'
     },
     {
       id: 12,
@@ -245,6 +273,76 @@ const Projects = () => {
       details: 'Outdoor in studijsko fotografiranje benda, ki združuje energijo nastopa in umetniško prefinjenost.'
     },
     {
+      id: 9,
+      title: 'Ansambel Obisk',
+      categories: ['Branding'],
+      description: 'Za Ansambel Obisk smo oblikovali novo grafično podobo in pripravili tiskovine, ki poudarjajo prepoznavnost in glasbeni značaj skupine.',
+      image: '/lovable-uploads/obisk-1.png',
+      images: [
+        '/lovable-uploads/obisk-1.png',
+        '/lovable-uploads/obisk-2.png',
+        '/lovable-uploads/obisk-3.png',
+        '/lovable-uploads/obisk-4.png',
+        '/lovable-uploads/obisk-5.png'
+      ],
+      technologies: ['Grafično oblikovanje', 'Tiskovine'],
+      details: 'Za Ansambel Obisk smo oblikovali novo grafično podobo in pripravili tiskovine, ki poudarjajo prepoznavnost in glasbeni značaj skupine. Glavni element logotipa je črka O, združena z glasbeno noto, kar simbolizira povezanost med identiteto ansambla in njegovo glasbo. Barvna paleta temelji na rdečih odtenkih, značilnih za oberkrainerski slog, ki izražajo energijo, tradicijo in veselje do glasbe.'
+    },
+    {
+      id: 25,
+      title: 'Forma By Eva',
+      categories: ['Spletna stran'],
+      description: 'Izdelava UI in UX dizajna za prodajno spletno stran, posebej zasnovane za maksimalno prodajnost in visoke konverzije.',
+      image: '/lovable-uploads/forma-1.png',
+      images: [
+        '/lovable-uploads/forma-1.png',
+        '/lovable-uploads/forma-2.png',
+        '/lovable-uploads/forma-3.png'
+      ],
+      technologies: ['UI/UX dizajn', 'Spletna stran', 'Grafično oblikovanje'],
+      details: 'Izdelava UI in UX dizajna za prodajno spletno stran, posebej zasnovane za maksimalno prodajnost in visoke konverzije. Dizajn vključuje intuitivno navigacijo, jasno strukturo produktov in vizualne elemente, ki usmerjajo uporabnika k nakupu. Poleg tega smo ustvarili platformo z bogato fitnes vsebino, ki uporabnikom nudi dodano vrednost in krepi angažiranost. Barvna paleta temelji na roza odtenkih, skladno z CGP, kar ustvarja prijetno in prepoznavno vizualno identiteto.'
+    },
+    {
+      id: 10,
+      title: 'Marija',
+      categories: ['Fotografija'],
+      description: 'Studijsko fotografiranje modela v vintage stilu, združenem z modernim pridihom. Fotografije izražajo preprostost, eleganco in toplino.',
+      image: '/lovable-uploads/marija-10.jpg',
+      images: [
+        '/lovable-uploads/marija-1.jpg',
+        '/lovable-uploads/marija-2.jpg',
+        '/lovable-uploads/marija-3.jpg',
+        '/lovable-uploads/marija-4.jpg',
+        '/lovable-uploads/marija-5.jpg',
+        '/lovable-uploads/marija-6.jpg',
+        '/lovable-uploads/marija-7.jpg',
+        '/lovable-uploads/marija-8.jpg',
+        '/lovable-uploads/marija-9.jpg',
+        '/lovable-uploads/marija-10.jpg'
+      ],
+      technologies: ['Studijska fotografija', 'Urejanje fotografij', 'Vsebina za družbena omrežja'],
+      details: 'Studijsko fotografiranje modela v vintage stilu, združenem z modernim pridihom. Fotografije izražajo preprostost, eleganco in toplino.'
+    },
+    {
+      id: 26,
+      title: 'HK Olimpija',
+      categories: ['Social Media', 'Branding'],
+      description: 'Za agencijo GREAT smo ustvarili objave in Photoshop montaže za hokejski klub Olimpija, z namenom izboljšanja vizualne predstavitve in povečanja angažiranosti na družbenih omrežjih.',
+      image: '/lovable-uploads/hk-olimpija-1.png',
+      images: [
+        '/lovable-uploads/hk-olimpija-1.png',
+        '/lovable-uploads/hk-olimpija-2.png',
+        '/lovable-uploads/hk-olimpija-3.jpg',
+        '/lovable-uploads/hk-olimpija-4.jpg',
+        '/lovable-uploads/hk-olimpija-5.jpg',
+        '/lovable-uploads/hk-olimpija-6.jpg',
+        '/lovable-uploads/hk-olimpija-7.jpg',
+        '/lovable-uploads/hk-olimpija-8.jpg'
+      ],
+      technologies: ['Grafično oblikovanje', 'Photoshop', 'Social media design'],
+      details: 'Za agencijo GREAT smo ustvarili objave in Photoshop montaže za hokejski klub Olimpija, z namenom izboljšanja vizualne predstavitve in povečanja angažiranosti na družbenih omrežjih.'
+    },
+    {
       id: 13,
       title: 'OrtoMG',
       categories: ['Fotografija'],
@@ -262,26 +360,6 @@ const Projects = () => {
       ],
       technologies: ['Fotografija', 'Studijsko fotografiranje'],
       details: 'Fotografiranje klinike OrtoMG v njihovih prostorih za spletno stran in socialna omrežja, z fokusom na profesionalnost in prijazno vzdušje.'
-    },
-    {
-      id: 14,
-      title: 'Lamborghini Revuelto',
-      categories: ['Fotografija'],
-      description: 'Fotografiranje športnega avtomobila Lamborghini Revuelto na lokaciji Malega Lošinja, z fokusom na eleganco in moč vozila.',
-      image: '/lovable-uploads/lambo-5.jpg',
-      images: [
-        '/lovable-uploads/lambo-1.jpg',
-        '/lovable-uploads/lambo-2.jpg',
-        '/lovable-uploads/lambo-3.jpg',
-        '/lovable-uploads/lambo-4.jpg',
-        '/lovable-uploads/lambo-5.jpg',
-        '/lovable-uploads/lambo-6.jpg',
-        '/lovable-uploads/lambo-7.jpg',
-        '/lovable-uploads/lambo-8.jpg',
-        '/lovable-uploads/lambo-9.jpg'
-      ],
-      technologies: ['Outdoor fotografija', 'Avtomobilska fotografija'],
-      details: 'Fotografiranje športnega avtomobila Lamborghini Revuelto na lokaciji Malega Lošinja, z fokusom na eleganco in moč vozila.'
     },
     {
       id: 15,
@@ -490,10 +568,23 @@ const Projects = () => {
   // Get unique categories
   const categories = ['Vse', ...Array.from(new Set(projects.flatMap(project => project.categories)))];
 
-  // Filter projects based on selected filter
-  const filteredProjects = selectedFilter === 'Vse' 
-    ? projects 
-    : projects.filter(project => project.categories.includes(selectedFilter));
+  // Filter and sort projects
+  const filteredAndSortedProjects = useMemo(() => {
+    let filtered = selectedFilter === 'Vse' 
+      ? projects 
+      : projects.filter(project => project.categories.includes(selectedFilter));
+
+    // Sort based on selected option
+    switch (sortBy) {
+      case 'cas':
+        return [...filtered].sort((a, b) => b.id - a.id); // Newest first
+      case 'abeceda':
+        return [...filtered].sort((a, b) => a.title.localeCompare(b.title, 'sl'));
+      case 'priporoceno':
+      default:
+        return filtered; // Keep the mixed order
+    }
+  }, [projects, selectedFilter, sortBy]);
 
   return (
     <div className="min-h-screen bg-black relative overflow-hidden">
@@ -518,23 +609,51 @@ const Projects = () => {
       {/* Filter Section */}
       <section className="relative py-8 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
-            {categories.map((category) => (
-              <Button
-                key={category}
-                variant={selectedFilter === category ? "default" : "outline"}
-                onClick={() => setSelectedFilter(category)}
-                className={`
-                  ${selectedFilter === category 
-                    ? 'bg-galactic-purple hover:bg-galactic-purple/90 text-white border-galactic-purple' 
-                    : 'glass border-white/20 text-white hover:bg-white/10 hover:border-galactic-purple/50'
-                  }
-                  transition-all duration-300 rounded-full px-6 py-2 font-medium
-                `}
-              >
-                {category}
-              </Button>
-            ))}
+          <div className="flex flex-col gap-6">
+            {/* Category Filters */}
+            <div className="flex flex-wrap justify-center gap-4">
+              {categories.map((category) => (
+                <Button
+                  key={category}
+                  variant={selectedFilter === category ? "default" : "outline"}
+                  onClick={() => setSelectedFilter(category)}
+                  className={`
+                    ${selectedFilter === category 
+                      ? 'bg-galactic-purple hover:bg-galactic-purple/90 text-white border-galactic-purple' 
+                      : 'glass border-white/20 text-white hover:bg-white/10 hover:border-galactic-purple/50'
+                    }
+                    transition-all duration-300 rounded-full px-6 py-2 font-medium
+                  `}
+                >
+                  {category}
+                </Button>
+              ))}
+            </div>
+            
+            {/* Sort Dropdown */}
+            <div className="flex justify-center">
+              <div className="glass rounded-full px-4 py-2 border border-white/20">
+                <div className="flex items-center gap-3">
+                  <span className="text-white/80 text-sm">Razvrsti:</span>
+                  <Select value={sortBy} onValueChange={setSortBy}>
+                    <SelectTrigger className="w-[180px] border-0 bg-transparent text-white focus:ring-0 focus:ring-offset-0">
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent className="glass border-white/20 bg-black/90 text-white">
+                      <SelectItem value="priporoceno" className="text-white hover:bg-white/10 focus:bg-white/10 focus:text-white">
+                        Priporočeno
+                      </SelectItem>
+                      <SelectItem value="cas" className="text-white hover:bg-white/10 focus:bg-white/10 focus:text-white">
+                        Po času
+                      </SelectItem>
+                      <SelectItem value="abeceda" className="text-white hover:bg-white/10 focus:bg-white/10 focus:text-white">
+                        Po abecedi
+                      </SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -543,7 +662,7 @@ const Projects = () => {
       <section className="relative py-8 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredProjects.map((project, index) => (
+            {filteredAndSortedProjects.map((project, index) => (
               <div
                 key={project.id}
                 className="group glass rounded-2xl overflow-hidden hover:glow-purple transition-all duration-500 hover:scale-105 cursor-pointer animate-scale-up"
@@ -602,7 +721,7 @@ const Projects = () => {
             onClick={(e) => e.stopPropagation()}
           >
             {(() => {
-              const project = filteredProjects.find(p => p.id === selectedProject);
+              const project = filteredAndSortedProjects.find(p => p.id === selectedProject);
               if (!project) return null;
 
               return (
