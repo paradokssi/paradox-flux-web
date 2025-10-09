@@ -425,6 +425,20 @@ const Projects = () => {
       ],
       technologies: ['Grafično oblikovanje', 'Social media design'],
       details: 'Oblikovanje objav za Instagram profil ameriškega kluba športnih in luksuznih avtomobilov NU Rally, z namenom ustvariti privlačno in prepoznavno vizualno podobo.'
+    },
+    {
+      id: 25,
+      title: 'Forma By Eva',
+      categories: ['Web Design', 'UI/UX'],
+      description: 'Izdelava UI in UX dizajna za prodajno spletno stran, posebej zasnovane za maksimalno prodajnost in visoke konverzije.',
+      image: '/lovable-uploads/forma-1.png',
+      images: [
+        '/lovable-uploads/forma-1.png',
+        '/lovable-uploads/forma-2.png',
+        '/lovable-uploads/forma-3.png'
+      ],
+      technologies: ['UI/UX dizajn', 'Spletna stran', 'Grafično oblikovanje'],
+      details: 'Izdelava UI in UX dizajna za prodajno spletno stran, posebej zasnovane za maksimalno prodajnost in visoke konverzije. Dizajn vključuje intuitivno navigacijo, jasno strukturo produktov in vizualne elemente, ki usmerjajo uporabnika k nakupu. Poleg tega smo ustvarili platformo z bogato fitnes vsebino, ki uporabnikom nudi dodano vrednost in krepi angažiranost. Barvna paleta temelji na roza odtenkih, skladno z CGP, kar ustvarja prijetno in prepoznavno vizualno identiteto.'
     }
   ];
 
