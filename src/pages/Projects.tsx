@@ -156,6 +156,22 @@ const Projects = () => {
       ],
       technologies: ['Grafično oblikovanje', 'Spletna stran', 'Promo materiali'],
       details: 'V sodelovanju z agencijo GREAT smo za podjetje Vizion Investment razvili novo grafično podobo, zasnovali promocijske materiale in oblikovali spletno stran, ki odraža eleganco in prestiž sveta investicij. Glavni simbol znamke je ikona, ki združuje črko V in krila, kar ponazarja vizijo, rast in svobodo v investiranju. Barvna paleta temelji na zlatih tonih, ki simbolizirajo bogastvo, zaupanje in stabilnost — vrednote, povezane z investicijami v Dubaju in nepremičninskem sektorju.'
+    },
+    {
+      id: 9,
+      title: 'Ansambel Obisk',
+      category: 'Branding',
+      description: 'Za Ansambel Obisk smo oblikovali novo grafično podobo in pripravili tiskovine, ki poudarjajo prepoznavnost in glasbeni značaj skupine.',
+      image: '/lovable-uploads/obisk-1.png',
+      images: [
+        '/lovable-uploads/obisk-1.png',
+        '/lovable-uploads/obisk-2.png',
+        '/lovable-uploads/obisk-3.png',
+        '/lovable-uploads/obisk-4.png',
+        '/lovable-uploads/obisk-5.png'
+      ],
+      technologies: ['Grafično oblikovanje', 'Tiskovine'],
+      details: 'Za Ansambel Obisk smo oblikovali novo grafično podobo in pripravili tiskovine, ki poudarjajo prepoznavnost in glasbeni značaj skupine. Glavni element logotipa je črka O, združena z glasbeno noto, kar simbolizira povezanost med identiteto ansambla in njegovo glasbo. Barvna paleta temelji na rdečih odtenkih, značilnih za oberkrainerski slog, ki izražajo energijo, tradicijo in veselje do glasbe.'
     }
   ];
 
