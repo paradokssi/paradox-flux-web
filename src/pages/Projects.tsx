@@ -182,12 +182,12 @@ const Projects = () => {
                     <Carousel className="w-full">
                       <CarouselContent>
                         {project.images.map((image, index) => (
-                          <CarouselItem key={index}>
-                            <div className="w-full">
+                          <CarouselItem key={index} className="basis-1/2">
+                            <div className="w-full px-2">
                               <img
                                 src={image}
                                 alt={`${project.title} - slika ${index + 1}`}
-                                className="w-full h-auto object-contain rounded-t-2xl"
+                                className="w-full h-auto object-contain rounded-lg"
                               />
                             </div>
                           </CarouselItem>
