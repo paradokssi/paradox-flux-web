@@ -294,6 +294,19 @@ const Projects = () => {
       ],
       technologies: ['Grafično oblikovanje'],
       details: 'Grafično oblikovanje strateških predstavitev podjetja Kolektor, ki zajemajo različne programe, veje in izdelke. Namen projekta je bil ustvariti pregledne, profesionalne in vizualno privlačne predstavitve, ki učinkovito komunicirajo vrednote in inovacije podjetja ter podpirajo poslovno strategijo.'
+    },
+    {
+      id: 16,
+      title: 'Kolektor - Sejmi',
+      categories: ['Branding'],
+      description: 'Grafično oblikovanje promocijskih materialov za sejme, vključno z letaki, plakati in bannerji za ozadje, ki izražajo profesionalnost in prepoznavnost blagovne znamke.',
+      image: '/lovable-uploads/kolektor-3.png',
+      images: [
+        '/lovable-uploads/kolektor-2.png',
+        '/lovable-uploads/kolektor-3.png'
+      ],
+      technologies: ['Grafično oblikovanje', 'Tiskovine', 'Sejemski materiali'],
+      details: 'Grafično oblikovanje promocijskih materialov za sejme, vključno z letaki, plakati in bannerji za ozadje, ki izražajo profesionalnost in prepoznavnost blagovne znamke.'
     }
   ];
 
