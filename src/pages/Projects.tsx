@@ -307,6 +307,21 @@ const Projects = () => {
       ],
       technologies: ['Grafično oblikovanje', 'Tiskovine', 'Sejemski materiali'],
       details: 'Grafično oblikovanje promocijskih materialov za sejme, vključno z letaki, plakati in bannerji za ozadje, ki izražajo profesionalnost in prepoznavnost blagovne znamke.'
+    },
+    {
+      id: 17,
+      title: 'Dan Kolektorja 2023',
+      categories: ['Video produkcija', 'Fotografija'],
+      description: 'Video in foto produkcija celotnega dogodka, zajem vsega dogajanja, vzdušja in ključnih trenutkov za promocijo in arhiv.',
+      image: '/lovable-uploads/kolektor-dan-1.png',
+      images: [
+        '/lovable-uploads/kolektor-dan-1.png',
+        '/lovable-uploads/kolektor-dan-2.png',
+        '/lovable-uploads/kolektor-dan-3.png'
+      ],
+      technologies: ['Video produkcija', 'Fotografija'],
+      details: 'Video in foto produkcija celotnega dogodka, zajem vsega dogajanja, vzdušja in ključnih trenutkov za promocijo in arhiv.',
+      videoUrl: 'https://www.youtube.com/embed/HsNxiX0whLg'
     }
   ];
 
@@ -458,7 +473,7 @@ const Projects = () => {
                     </button>
                   </div>
                   
-                  <div className="p-8">
+                   <div className="p-8">
                     <div className="flex items-center justify-between mb-4">
                       <h2 className="text-2xl font-bold galactic-purple">
                         {project.title}
@@ -475,6 +490,23 @@ const Projects = () => {
                     <p className="text-white/80 mb-6">
                       {project.details}
                     </p>
+
+                    {project.videoUrl && (
+                      <div className="mb-6">
+                        <h3 className="text-lg font-semibold galactic-purple mb-4">
+                          Video
+                        </h3>
+                        <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                          <iframe
+                            className="absolute top-0 left-0 w-full h-full rounded-lg"
+                            src={project.videoUrl}
+                            title={project.title}
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          ></iframe>
+                        </div>
+                      </div>
+                    )}
                     
                     <div className="space-y-4">
                       <h3 className="text-lg font-semibold galactic-purple">
