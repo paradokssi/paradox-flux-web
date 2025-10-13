@@ -13,6 +13,19 @@ const Projects = () => {
 
   const projects = [
     {
+      id: 29,
+      title: 'Jan Plestenjak - VINAKOPER',
+      categories: ['Fotografija'],
+      description: 'Energija in emocije Jana Plestenjaka na odru VINAKOPER 2025.',
+      image: '/lovable-uploads/vinakoper-1.png',
+      images: [
+        '/lovable-uploads/vinakoper-1.png',
+        '/lovable-uploads/vinakoper-2.png'
+      ],
+      technologies: ['Koncertna fotografija', 'Event fotografija'],
+      details: 'Energija in emocije Jana Plestenjaka na odru VINAKOPER 2025.'
+    },
+    {
       id: 14,
       title: 'Lamborghini Revuelto',
       categories: ['Fotografija'],
