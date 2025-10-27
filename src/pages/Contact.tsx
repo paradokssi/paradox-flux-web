@@ -16,8 +16,7 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Replace this URL with your make.com webhook URL
-    const webhookUrl = 'YOUR_MAKE_COM_WEBHOOK_URL';
+    const webhookUrl = 'https://hook.eu2.make.com/sdomrn82izsf9voxip1gwhd3akjarnnj';
 
     try {
       const response = await fetch(webhookUrl, {
