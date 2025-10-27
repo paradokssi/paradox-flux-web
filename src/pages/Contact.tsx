@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-import { supabase } from '@/integrations/supabase/client';
 import { useToast } from '@/hooks/use-toast';
 const Contact = () => {
   const { toast } = useToast();
@@ -17,16 +16,24 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    // Replace this URL with your make.com webhook URL
+    const webhookUrl = 'YOUR_MAKE_COM_WEBHOOK_URL';
+
     try {
-      const { error } = await supabase
-        .from('contact_submissions')
-        .insert([{
+      const response = await fetch(webhookUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
           name: formData.name,
           email: formData.email,
-          message: formData.message
-        }]);
+          message: formData.message,
+          timestamp: new Date().toISOString(),
+        }),
+      });
 
-      if (error) throw error;
+      if (!response.ok) throw new Error('Failed to send message');
 
       toast({
         title: "Sporočilo uspešno poslano!",
