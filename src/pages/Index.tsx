@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-import MouseTrail from '../components/MouseTrail';
 import { Users, Target, Rocket, Camera, Palette, Video, Bot, TrendingUp, Home, User, FolderOpen, Settings, Mail } from 'lucide-react';
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -84,7 +83,6 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center px-4">
-        <MouseTrail />
         <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
           <div className={`space-y-8 text-center lg:text-left ${isVisible ? 'animate-slide-up' : 'opacity-0'}`}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
