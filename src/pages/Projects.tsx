@@ -13,6 +13,18 @@ const Projects = () => {
 
   const projects = [
     {
+      id: 35,
+      title: 'Lino Sella – Bandelli',
+      categories: ['Branding'],
+      description: 'Oblikovanje velikoformatnih nalepk za izložbene šipe trgovine Bandelli, namenjenih promociji izdelkov Lino Sella. Vizualna zasnova jasno predstavlja ponudbo mešalcev betona z dinamično kompozicijo, prepoznavno barvno paleto in profesionalno produktno fotografijo.',
+      image: '/lovable-uploads/lino-sella-1.png',
+      images: [
+        '/lovable-uploads/lino-sella-1.png'
+      ],
+      technologies: ['Grafično oblikovanje', 'Oblikovanje nalepk', 'Vizualna komunikacija'],
+      details: 'Oblikovanje velikoformatnih nalepk za izložbene šipe trgovine Bandelli, namenjenih promociji izdelkov Lino Sella. Vizualna zasnova jasno predstavlja ponudbo mešalcev betona z dinamično kompozicijo, prepoznavno barvno paleto in profesionalno produktno fotografijo.'
+    },
+    {
       id: 34,
       title: 'Fresh Agency',
       categories: ['Branding'],
