@@ -738,7 +738,7 @@ const Projects = () => {
                     <Carousel className="w-full">
                       <CarouselContent>
                         {project.images.map((image, index) => (
-                          <CarouselItem key={index} className="basis-1/2">
+                          <CarouselItem key={index} className="basis-full md:basis-1/2">
                             <div className="w-full px-2">
                               <img
                                 src={image}
