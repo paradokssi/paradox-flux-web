@@ -153,27 +153,6 @@ const Projects = () => {
       details: 'Za blagovno znamko Gripsi smo zasnovali celostno grafično podobo in strategijo vizualne identitete. Ključni element logotipa je minimalistična ikona, ki združuje črko G in simbol neskončnosti – kar ponazarja neprekinjen razvoj, zanesljivost in inovativnost znamke. Celotna vizualna podoba je zasnovana v estetskem, prečiščenem in elegantnem slogu, ki izraža sodobnost in profesionalnost.'
     },
     {
-      id: 11,
-      title: 'Boudoir fotografiranje',
-      categories: ['Fotografija'],
-      description: 'Intimno boudoir fotografiranje, ki združuje čutnost in eleganco s prefinjenim stilom ter mehkimi svetlobnimi efekti.',
-      image: '/lovable-uploads/boudoir-2.jpg',
-      images: [
-        '/lovable-uploads/boudoir-1.jpg',
-        '/lovable-uploads/boudoir-2.jpg',
-        '/lovable-uploads/boudoir-3.jpg',
-        '/lovable-uploads/boudoir-4.jpg',
-        '/lovable-uploads/boudoir-5.jpg',
-        '/lovable-uploads/boudoir-6.jpg',
-        '/lovable-uploads/boudoir-7.jpg',
-        '/lovable-uploads/boudoir-8.jpg',
-        '/lovable-uploads/boudoir-9.jpg',
-        '/lovable-uploads/boudoir-10.jpg'
-      ],
-      technologies: ['Fotografija', 'Urejanje fotografij'],
-      details: 'Intimno boudoir fotografiranje, ki združuje čutnost in eleganco s prefinjenim stilom ter mehkimi svetlobnimi efekti.'
-    },
-    {
       id: 5,
       title: 'Šabec Transport',
       categories: ['Branding', 'Spletna stran'],
