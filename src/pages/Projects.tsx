@@ -13,6 +13,24 @@ const Projects = () => {
 
   const projects = [
     {
+      id: 30,
+      title: 'Luxe Label by Vane Trajkov',
+      categories: ['Branding'],
+      description: 'Celostna grafična podoba za luksuzni beauty salon Luxe Label by Vane Trajkov. Znamka združuje eleganco, zaupanje in vrhunsko storitev v brezčasno vizualno identiteto, ki odraža prestiž in skrb za vsakega posameznika.',
+      image: '/lovable-uploads/luxelabel-1.png',
+      images: [
+        '/lovable-uploads/luxelabel-1.png',
+        '/lovable-uploads/luxelabel-2.png',
+        '/lovable-uploads/luxelabel-3.png',
+        '/lovable-uploads/luxelabel-4.png',
+        '/lovable-uploads/luxelabel-5.png',
+        '/lovable-uploads/luxelabel-6.png',
+        '/lovable-uploads/luxelabel-7.png'
+      ],
+      technologies: ['Celostna grafična podoba', 'Oblikovanje logotipa', 'Tiskovine', 'Strategija blagovne znamke'],
+      details: 'Celostna grafična podoba za luksuzni beauty salon Luxe Label by Vane Trajkov. Znamka združuje eleganco, zaupanje in vrhunsko storitev v brezčasno vizualno identiteto, ki odraža prestiž in skrb za vsakega posameznika.'
+    },
+    {
       id: 29,
       title: 'Jan Plestenjak - VINAKOPER',
       categories: ['Fotografija'],
