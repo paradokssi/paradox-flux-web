@@ -13,6 +13,23 @@ const Projects = () => {
 
   const projects = [
     {
+      id: 34,
+      title: 'Fresh Agency',
+      categories: ['Branding'],
+      description: 'Sveža in energična celostna grafična podoba za medijsko agencijo Fresh. Vizualna identiteta temelji na živahni zeleni barvni paleti in igrivi tipografiji z organskim simbolom, ki izraža dinamičnost, kreativnost in svežino v svetu medijev in marketinga.',
+      image: '/lovable-uploads/fresh-1.png',
+      images: [
+        '/lovable-uploads/fresh-1.png',
+        '/lovable-uploads/fresh-2.png',
+        '/lovable-uploads/fresh-3.png',
+        '/lovable-uploads/fresh-4.png',
+        '/lovable-uploads/fresh-5.png',
+        '/lovable-uploads/fresh-6.png'
+      ],
+      technologies: ['Celostna grafična podoba', 'Oblikovanje logotipa', 'Barvna strategija', 'Vizualna identiteta'],
+      details: 'Sveža in energična celostna grafična podoba za medijsko agencijo Fresh. Vizualna identiteta temelji na živahni zeleni barvni paleti in igrivi tipografiji z organskim simbolom, ki izraža dinamičnost, kreativnost in svežino v svetu medijev in marketinga.'
+    },
+    {
       id: 33,
       title: 'HBT Studio',
       categories: ['Branding'],
