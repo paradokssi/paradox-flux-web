@@ -31,6 +31,30 @@ const Projects = () => {
       details: 'Celostna grafična podoba za luksuzni beauty salon Luxe Label by Vane Trajkov. Znamka združuje eleganco, zaupanje in vrhunsko storitev v brezčasno vizualno identiteto, ki odraža prestiž in skrb za vsakega posameznika.'
     },
     {
+      id: 31,
+      title: 'Bike Center Cerknica',
+      categories: ['Branding'],
+      description: 'Oblikovanje celovitega nabora nalepk za okna in vrata kolesarskega centra Bike Center Cerknica. Vizualni elementi vključujejo logotip, partnerske znamke in ključne informacije, zasnovane za maksimalno prepoznavnost in profesionalen prvi vtis.',
+      image: '/lovable-uploads/bike-center-1.png',
+      images: [
+        '/lovable-uploads/bike-center-1.png'
+      ],
+      technologies: ['Grafično oblikovanje', 'Oblikovanje nalepk', 'Vizualna komunikacija'],
+      details: 'Oblikovanje celovitega nabora nalepk za okna in vrata kolesarskega centra Bike Center Cerknica. Vizualni elementi vključujejo logotip, partnerske znamke in ključne informacije, zasnovane za maksimalno prepoznavnost in profesionalen prvi vtis.'
+    },
+    {
+      id: 32,
+      title: 'ProPepa – Polep vozil',
+      categories: ['Branding'],
+      description: 'Grafično oblikovanje in izvedba celostnega polepa voznega parka podjetja ProPepa. Dizajn poudarja prepoznavnost blagovne znamke na cesti z dosledno uporabo barvne palete, logotipa in kontaktnih podatkov na vozilih.',
+      image: '/lovable-uploads/propepa-1.png',
+      images: [
+        '/lovable-uploads/propepa-1.png'
+      ],
+      technologies: ['Grafično oblikovanje', 'Polep vozil', 'Vizualna identiteta'],
+      details: 'Grafično oblikovanje in izvedba celostnega polepa voznega parka podjetja ProPepa. Dizajn poudarja prepoznavnost blagovne znamke na cesti z dosledno uporabo barvne palete, logotipa in kontaktnih podatkov na vozilih.'
+    },
+    {
       id: 29,
       title: 'Jan Plestenjak - VINAKOPER',
       categories: ['Fotografija'],
