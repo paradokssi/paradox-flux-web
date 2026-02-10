@@ -13,6 +13,27 @@ const Projects = () => {
 
   const projects = [
     {
+      id: 33,
+      title: 'HBT Studio',
+      categories: ['Branding'],
+      description: 'Celostna grafična podoba za HBT Studio – prostor elegance in mirnega luksuza, kjer se estetika, minimalizem in premišljeni kontrasti združijo v brezčasno vizualno identiteto. Dizajn temelji na ravnotežju, redu in občutku vrednosti za vsakega obiskovalca.',
+      image: '/lovable-uploads/hbt-1.png',
+      images: [
+        '/lovable-uploads/hbt-1.png',
+        '/lovable-uploads/hbt-2.png',
+        '/lovable-uploads/hbt-3.png',
+        '/lovable-uploads/hbt-4.png',
+        '/lovable-uploads/hbt-5.png',
+        '/lovable-uploads/hbt-6.png',
+        '/lovable-uploads/hbt-7.png',
+        '/lovable-uploads/hbt-8.png',
+        '/lovable-uploads/hbt-9.png',
+        '/lovable-uploads/hbt-10.png'
+      ],
+      technologies: ['Celostna grafična podoba', 'Oblikovanje logotipa', 'Tiskovine', 'Social media design', 'Strategija blagovne znamke'],
+      details: 'Celostna grafična podoba za HBT Studio – prostor elegance in mirnega luksuza, kjer se estetika, minimalizem in premišljeni kontrasti združijo v brezčasno vizualno identiteto. Dizajn temelji na ravnotežju, redu in občutku vrednosti za vsakega obiskovalca.'
+    },
+    {
       id: 30,
       title: 'Luxe Label by Vane Trajkov',
       categories: ['Branding'],
